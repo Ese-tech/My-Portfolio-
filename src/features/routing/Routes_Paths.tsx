@@ -4,6 +4,6 @@ const ROUTES_PATHS = {
     MY_PROJECTS: '/my-projects',
     CONTACT: '/contact',
     SKILLS: '/skills',
-}; as const ;
+} as const ;
 
 export default ROUTES_PATHS;
