@@ -12,15 +12,7 @@ export function NavBar() {
 
 	return (
 		<div className='bg-gradient-to-r from-amber-600 to-yellow-500 border-2'>
-			<div className='flex justify-between items-center p-5'>
-				<h1 className='text-white font-bold text-xl'>My Portfolio</h1>
-				<button
-					className='text-white text-2xl md:hidden'
-					onClick={toggleSidebar}
-				>
-					<FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
-				</button>
-			</div>
+			
 			<nav
 				className={`${
 					isSidebarOpen ? "flex" : "hidden"
@@ -61,7 +53,16 @@ export function NavBar() {
 				<NavLink to='/skills' end className='text-zinc-300 hover:text-gold-500'>
 					Skills
 				</NavLink>
-			</nav>
+      </nav>
+      <div className='flex justify-between items-center p-5'>
+				<h1 className='text-white font-bold text-xl'>My Portfolio</h1>
+				<button
+					className='text-white text-2xl md:hidden'
+					onClick={toggleSidebar}
+				>
+					<FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
+				</button>
+			</div>
 		</div>
 	);
 }
