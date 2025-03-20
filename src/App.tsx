@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router'
-import { NavBar } from './features/navigattion/NavBar'
+import { NavBar } from './features/navigation/NavBar'
 import MainRoutes from './features/routing/Routes'
 
 function App() {
