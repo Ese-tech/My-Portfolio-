@@ -1,8 +1,14 @@
 import { NavLink } from "react-router";
 export function NavBar() {
   return (
-    <nav>
-      <NavLink to='/' end>
+    <nav className="flex  space-x-15 p-5 mb-3">
+      <NavLink 
+        to='/' 
+        end 
+        className={({ isActive }) =>
+          isActive ? "text-green-500" : "text-black"
+        }
+      >
         Home
       </NavLink>
       <NavLink to='/about-me' end>
