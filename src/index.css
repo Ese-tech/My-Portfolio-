@@ -15,14 +15,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@layer utilities {
-	.border-gold-500 {
-		border-color: #d4af37;
-	}
+.text-gold-500 {
+	color: #ffd700;
 }
 
-@media (min-width: 768px) {
-	nav {
-		display: flex !important;
-	}
+.font-bold {
+	font-weight: bold;
+}
+
+.hover\:text-gold-500:hover {
+	color: #ffd700;
+}
+
+.transition-transform {
+	transition: transform 0.3s ease-in-out;
 }
