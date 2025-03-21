@@ -2,6 +2,7 @@ import { NavLink } from "react-router";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { SideBar } from "./SideBar";
 
 export function NavBar() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -11,26 +12,25 @@ export function NavBar() {
 	};
 
 	return (
-		<div className='bg-gradient-to-r from-amber-600 to-yellow-500 border-2 '>
+		<div className='-mt-6 border-2 border-amber-600'>							
 			<div className='flex justify-between items-center p-5'>
 				<button
 					className='text-white text-2xl md:hidden'
 					onClick={toggleSidebar}
 				>
-					<FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
+					<FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} className="text-amber-700"/>
 				</button>
 			</div>
-			<div className='flex justify-center'>
-				<nav
-					className={`${
-						isSidebarOpen ? "flex" : "hidden"
-					} flex-col md:flex md:flex-row md:space-x-15 p-5 bg-white rounded-lg shadow-lg `}
-				>
+			<SideBar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+			<div className='hidden md:flex justify-center '>
+				<nav className='flex flex-row space-x-15 p-6 bg-gradient-to-r from-amber-600 to-yellow-500 rounded-lg shadow-lg'>
 					<NavLink
 						to='/'
 						end
 						className={({ isActive }) =>
-							isActive ? "text-gold-500 font-bold" : "hover:text-gold-500"
+							isActive
+								? "text-amber-700 font-bold"
+								: "text-zinc-500 hover:text-gold-500"
 						}
 					>
 						Home
@@ -80,9 +80,6 @@ export function NavBar() {
 						Skills
 					</NavLink>
 				</nav>
-			</div>
-			<div className='flex justify-center mt-5'>
-				<h1 className='text-white font-bold text-xl'>My Portfolio</h1>
 			</div>
 		</div>
 	);
