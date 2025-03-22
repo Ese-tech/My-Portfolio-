@@ -17,7 +17,7 @@ export function SideBar({
 		<div
 			className={`fixed top-0 left-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 transform ${
 				isOpen ? "translate-x-0" : "-translate-x-full"
-			} transition-transform duration-300 ease-in-out`}
+			} transition-transform duration-300 ease-in-out md:hidden`}
 		>
 			<div className='flex justify-between items-center p-5'>
 				<h2 className='text-white font-bold text-xl'>Menu</h2>
