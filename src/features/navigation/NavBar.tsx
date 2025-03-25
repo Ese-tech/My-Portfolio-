@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { SideBar } from "./SideBar";
+// import { SideBar } from "./SideBar";
 import {
 	faLinkedin,
 	faFacebook,
@@ -19,7 +19,7 @@ export function NavBar() {
 	return (
 		<>
 			{/* Smartphone View */}
-			<div className='flex justify-center p-5 md:hidden'>
+			<div className='flex justify-center p-5 '>
 				<button className='text-white text-2xl' onClick={toggleSidebar}>
 					<FontAwesomeIcon
 						icon={isSidebarOpen ? faTimes : faBars}
@@ -27,7 +27,7 @@ export function NavBar() {
 					/>
 				</button>
 			</div>
-			<SideBar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+			{/* <SideBar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} /> */}
 
 			{/* Tablet View */}
 			<div className='hidden md:flex lg:hidden justify-center bg-gradient-to-r from-amber-600 to-yellow-500 rounded-lg shadow-lg'>
