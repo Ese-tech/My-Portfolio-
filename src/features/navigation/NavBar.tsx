@@ -36,7 +36,7 @@ export function NavBar() {
 					</NavLink>
 					<NavLink to='/skills' className='flex items-center'>
 						<FontAwesomeIcon icon={faCogs} className='mr-2' />
-						Skills
+						Skills	
 					</NavLink>
 				</nav>
 			</div>

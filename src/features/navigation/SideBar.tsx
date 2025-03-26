@@ -10,7 +10,7 @@ import {
 
 function SideBar() {
 	return (
-		<div className='hidden lg:block fixed top-0 left-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg z-50 text-2xl font-bold'>
+		<div className='lg:flex hidden fixed justify-between left-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg z-50 text-2xl font-bold'>
 			<div className='flex justify-between items-center p-5'>
 				<h2 className='text-white text-3xl font-extrabold'>Menu</h2>
 			</div>

@@ -12,7 +12,7 @@ import {
 function SocialMedia() {
 	return (
 		<div className='flex justify-center mt-5 relative'>
-			<div className='absolute left-5 mt-96  transform -translate-y-1/2 flex flex-col items-center space-y-2 text-3xl'>
+			<div className='absolute right-5 mt-96  transform -translate-y-1/2 flex flex-col items-center space-y-2 text-3xl'>
 				<a
 					href='https://linkedin.com'
 					target='_blank'
