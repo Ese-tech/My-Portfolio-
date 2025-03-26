@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router"; // Fixed import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faHome,
@@ -8,24 +8,11 @@ import {
 	faCogs,
 } from "@fortawesome/free-solid-svg-icons";
 
- function SideBar({
-	isOpen,
-	onClose,
-}: {
-	isOpen: boolean;
-	onClose: () => void;
-}) {
+function SideBar() {
 	return (
-		<div
-			className={`fixed top-0 left-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 transform ${
-				isOpen ? "translate-x-0" : "-translate-x-full"
-			} transition-transform duration-300 ease-in-out md:hidden`}
-		>
+		<div className='hidden lg:block fixed top-0 left-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg z-50 text-2xl font-bold'>
 			<div className='flex justify-between items-center p-5'>
-				<h2 className='text-white font-bold text-xl'>Menu</h2>
-				<button className='text-white text-2xl' onClick={onClose}>
-					&times;
-				</button>
+				<h2 className='text-white text-3xl font-extrabold'>Menu</h2>
 			</div>
 			<nav className='flex flex-col space-y-5 p-5'>
 				<NavLink
@@ -34,7 +21,7 @@ import {
 					className={({ isActive }) =>
 						isActive
 							? "text-gold-500 font-bold flex items-center"
-							: "text-zinc-600 hover:text-gold-500 flex items-center"
+							: "text-white hover:text-gold-500 flex items-center"
 					}
 				>
 					<FontAwesomeIcon icon={faHome} className='mr-3' />
@@ -43,7 +30,7 @@ import {
 				<NavLink
 					to='/about-me'
 					end
-					className='text-zinc-300 hover:text-gold-500 flex items-center'
+					className='text-white hover:text-gold-500 flex items-center'
 				>
 					<FontAwesomeIcon icon={faUser} className='mr-3' />
 					About Me
@@ -76,4 +63,5 @@ import {
 		</div>
 	);
 }
+
 export { SideBar };

@@ -43,7 +43,7 @@ function Home() {
         </a>
         
       </div>
-      <h1 className="text-amber-700 font-bold text-xl m-0">My Portfolio</h1>
+      {/* <h1 className="text-amber-700 font-bold text-xl ">My Portfolio</h1> */}
     </div>
   );
 }

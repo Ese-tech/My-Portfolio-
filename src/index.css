@@ -13,6 +13,7 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	border:2px solid #000;
 }
 
 .text-gold-500 {
