@@ -1,12 +1,14 @@
 import { NavLink } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faLinkedin,
-	faFacebook,
-	faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+	faHome,
+	faUser,
+	faProjectDiagram,
+	faEnvelope,
+	faCogs,
+} from "@fortawesome/free-solid-svg-icons";
 
-export function SideBar({
+ function SideBar({
 	isOpen,
 	onClose,
 }: {
@@ -31,48 +33,47 @@ export function SideBar({
 					end
 					className={({ isActive }) =>
 						isActive
-							? "text-gold-500 font-bold"
-							: "text-zinc-300 hover:text-gold-500"
+							? "text-gold-500 font-bold flex items-center"
+							: "text-zinc-600 hover:text-gold-500 flex items-center"
 					}
 				>
+					<FontAwesomeIcon icon={faHome} className='mr-3' />
 					Home
 				</NavLink>
 				<NavLink
 					to='/about-me'
 					end
-					className='text-zinc-300 hover:text-gold-500'
+					className='text-zinc-300 hover:text-gold-500 flex items-center'
 				>
+					<FontAwesomeIcon icon={faUser} className='mr-3' />
 					About Me
 				</NavLink>
 				<NavLink
 					to='/my-projects'
 					end
-					className='text-zinc-300 hover:text-gold-500'
+					className='text-zinc-300 hover:text-gold-500 flex items-center'
 				>
+					<FontAwesomeIcon icon={faProjectDiagram} className='mr-3' />
 					My Projects
 				</NavLink>
 				<NavLink
 					to='/contact'
 					end
-					className='text-zinc-300 hover:text-gold-500'
+					className='text-zinc-300 hover:text-gold-500 flex items-center'
 				>
+					<FontAwesomeIcon icon={faEnvelope} className='mr-3' />
 					Contact
 				</NavLink>
-				<NavLink to='/skills' end className='text-zinc-300 hover:text-gold-500'>
+				<NavLink
+					to='/skills'
+					end
+					className='text-zinc-300 hover:text-gold-500 flex items-center'
+				>
+					<FontAwesomeIcon icon={faCogs} className='mr-3' />
 					Skills
 				</NavLink>
 			</nav>
-			<div className='flex justify-around mt-auto p-5'>
-				<a href='#' className='text-white hover:text-gold-500'>
-					<FontAwesomeIcon icon={faLinkedin} />
-				</a>
-				<a href='#' className='text-white hover:text-gold-500'>
-					<FontAwesomeIcon icon={faFacebook} />
-				</a>
-				<a href='#' className='text-white hover:text-gold-500'>
-					<FontAwesomeIcon icon={faTwitter} />
-				</a>
-			</div>
 		</div>
 	);
 }
+export { SideBar };
