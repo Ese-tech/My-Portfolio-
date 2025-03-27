@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router";
-import { useSidebarContext } from "./SidebarContext";
+import { useSidebarContext } from "../navigation/useSidebarContext"; // Corrected path
 
 function MobileView() {
 	const { isSidebarOpen, toggleSidebar } = useSidebarContext();
