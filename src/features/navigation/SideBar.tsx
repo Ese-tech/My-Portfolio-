@@ -12,7 +12,7 @@ function SideBar() {
 	return (
 		<div className='hidden lg:block fixed  left-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg z-50 text-2xl font-bold'>
 			<div className='flex justify-between items-center p-5'>
-				<h2 className='text-white text-4xl font-extrabold mt-10 mb-36 p-8'>
+				<h2 className='text-4xl font-extrabold mt-10 mb-36 p-8'>
 					Menu
 				</h2>
 			</div>
