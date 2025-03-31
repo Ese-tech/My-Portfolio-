@@ -16,8 +16,8 @@ export function NavBar() {
 	return (
 		<>
 			{/* Tablet View */}
-			<div className='hidden md:flex lg:hidden justify-center bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg border-red-600 border-2 -mt-5 font-bold text-xl'>
-				<nav className='flex flex-row space-x-5 p-4'>
+			<div className='hidden md:flex lg:hidden fixed top-0 left-0 w-full bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg z-50 font-bold text-xl'>
+				<nav className='flex flex-row justify-center space-x-5 p-4'>
 					<NavLink to='/' className='flex items-center'>
 						<FontAwesomeIcon icon={faHome} className='mr-3 mb-2.5' />
 						Home
@@ -36,7 +36,7 @@ export function NavBar() {
 					</NavLink>
 					<NavLink to='/skills' className='flex items-center'>
 						<FontAwesomeIcon icon={faCogs} className='mr-3 mb-2.5' />
-						Skills	
+						Skills
 					</NavLink>
 				</nav>
 			</div>

@@ -4,6 +4,8 @@
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
+	width: 100%;
+	height: 100%;
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
@@ -13,7 +15,32 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	border:2px solid #000;
+	border: 2px solid #000;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main-content {
+	margin-left: 0; /* Default for mobile */
+	padding: 1rem;
+	padding-top: 4rem; /* Add padding for fixed MobileView height */
+}
+
+@media (min-width: 1024px) {
+	.main-content {
+		margin-left: 16rem; /* Adjust for sidebar width */
+		padding-top: 0; /* No padding needed for desktop */
+	}
 }
 
 .text-gold-500 {
@@ -78,4 +105,3 @@
 		display: none;
 	}
 }
-

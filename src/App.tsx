@@ -9,10 +9,12 @@ function App() {
 	return (
 		<SidebarProvider>
 			<BrowserRouter>
-				<SideBar /> 
-				<MainRoutes />
-				<NavBar />
-				<SocialMedia />
+				<SideBar />
+				<div className='main-content'>
+					<MainRoutes />
+					<NavBar />
+					<SocialMedia />
+				</div>
 			</BrowserRouter>
 		</SidebarProvider>
 	);

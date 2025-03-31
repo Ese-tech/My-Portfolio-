@@ -1,4 +1,4 @@
-import { NavLink } from "react-router"; // Fixed import
+import { NavLink } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faHome,
@@ -10,11 +10,9 @@ import {
 
 function SideBar() {
 	return (
-		<div className='hidden lg:block fixed  left-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg z-50 text-2xl font-bold'>
+		<div className='hidden lg:block fixed left-0 top-0 h-full w-64 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg z-50 text-2xl font-bold'>
 			<div className='flex justify-between items-center p-5'>
-				<h2 className='text-4xl font-extrabold mt-10 mb-36 p-8'>
-					Menu
-				</h2>
+				<h2 className='text-4xl font-extrabold mt-10 mb-36 p-8'>Menu</h2>
 			</div>
 			<nav className='flex flex-col p-8 space-y-18'>
 				<NavLink
