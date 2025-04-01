@@ -39,12 +39,14 @@ const ProjectsDetaList = () => {
 				  to={`/my-projects/${repo.name}`} // Pass the name directly
 				  key={repo.id}
 			  >
-                        <li className='border rounded-lg shadow-lg p-4 bg-white hover:shadow-xl transition-shadow'>
-                            <h3 className='text-xl text-amber-300 font-semibold'>{repo.name}</h3>
-                            <p className='text-sm text-gray-600'>{repo.description}</p>
-                            <p className='text-sm'>Stars: {repo.stargazers_count}</p>
-                            <p className='text-sm text-amber-900'>Language: {repo.language}</p>
-                        </li>
+						<li className='border rounded-lg shadow-lg p-4 bg-gradient-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 transition-all duration-300'>
+							<h3 className='text-xl text-amber-400 font-semibold mb-2'>{repo.name}</h3>
+							<p className='text-sm text-gray-700 mb-2'>{repo.description || "No description available"}</p>
+							<div className='flex justify-between items-center text-sm'>
+								<p className='text-gray-600'>⭐ {repo.stargazers_count}</p>
+								<p className='text-amber-800'>{repo.language || "N/A"}</p>
+							</div>
+						</li>
                     </Link>
                 ))}
             </ul>
