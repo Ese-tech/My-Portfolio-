@@ -29,28 +29,33 @@ const ProjectsDetaList = () => {
     }, []);
 
     return (
-        <div className='projects'>
-            <h2 className='text-2xl font-bold mb-4'>My Projects</h2>
-            {loading && <p>Loading...</p>}
-            {error && <p>{error}</p>}
-            <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-                {repos.map((repo) => (
-                  <Link
-				  to={`/my-projects/${repo.name}`} // Pass the name directly
-				  key={repo.id}
-			  >
-						<li className='border rounded-lg shadow-lg p-4 bg-gradient-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 transition-all duration-300'>
-							<h3 className='text-xl text-amber-400 font-semibold mb-2'>{repo.name}</h3>
-							<p className='text-sm text-gray-700 mb-2'>{repo.description || "No description available"}</p>
-							<div className='flex justify-between items-center text-sm'>
-								<p className='text-gray-600'>⭐ {repo.stargazers_count}</p>
-								<p className='text-amber-800'>{repo.language || "N/A"}</p>
-							</div>
-						</li>
-                    </Link>
-                ))}
-            </ul>
-        </div>
+		<div className='projects-container mt-18 px-32   border-amber-950 border-2 w-7xl h- mx-auto p-8 rounded-lg shadow-lg bg-white'>
+			<h2 className='text-3xl font-extrabold text-gray-800 mb-6 text-center'>My Projects</h2>
+			{loading && <p className='text-center text-gray-500'>Loading...</p>}
+			{error && <p className='text-center text-red-500'>{error}</p>}
+			<ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+			{repos.map((repo) => (
+			  <Link
+					  to={`/my-projects/${repo.name}`} // Pass the name directly
+					  key={repo.id}
+				  >
+							<li
+								className='border rounded-lg shadow-lg p-6 bg-white hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between h-full'
+								style={{
+									borderImage: "linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet) 1",
+								}}
+							>
+								<h3 className='text-xl text-amber-500 font-bold mb-3'>{repo.name}</h3>
+								<p className='text-sm text-gray-600 mb-4'>{repo.description || "No description available"}</p>
+								<div className='flex justify-between items-center text-sm mt-auto'>
+									<p className='text-gray-700 font-medium'>⭐ {repo.stargazers_count}</p>
+									<p className='text-gray-800 font-medium'>{repo.language || "N/A"}</p>
+								</div>
+							</li>
+				</Link>
+			))}
+			</ul>
+		</div>
     );
 };
 

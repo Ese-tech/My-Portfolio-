@@ -52,23 +52,24 @@ function Card() {
     } = repoData;
 
     return (
-        <div className="p-4 border rounded shadow-md bg-white">
-            <h2 className="text-xl font-bold mb-2">{name || "No name available"}</h2>
-            <p className="text-gray-700 mb-2">{description || "No description available"}</p>
-            <p className="text-gray-600 mb-1">⭐ Stars: {stargazers_count || 0}</p>
-            <p className="text-gray-600 mb-1">📚 Topics: {topics?.join(", ") || "No topics available"}</p>
-            <p className="text-gray-600 mb-1">📅 Created At: {new Date(created_at).toLocaleDateString()}</p>
-            <p className="text-gray-600 mb-1">🔄 Updated At: {new Date(updated_at).toLocaleDateString()}</p>
-            <p className="text-gray-600 mb-2">💻 Language: {language || "Not specified"}</p>
+        <div className="p-12 border rounded shadow-md bg-white w-7xl h-full  flex flex-col justify-center items-center flex-wrap mx-auto mt-52 ml-28 text-center">
+            <h2 className="text-4xl font-bold mb-4">{name || "No name available"}</h2>
+            <p className="text-gray-700 text-lg mb-4">{description || "No description available"}</p>
+            <p className="text-gray-600 text-lg mb-2">⭐ Stars: {stargazers_count || 0}</p>
+            <p className="text-gray-600 text-lg mb-2">📚 Topics: {topics?.join(", ") || "No topics available"}</p>
+            <p className="text-gray-600 text-lg mb-2">📅 Created At: {new Date(created_at).toLocaleDateString()}</p>
+            <p className="text-gray-600 text-lg mb-2">🔄 Updated At: {new Date(updated_at).toLocaleDateString()}</p>
+            <p className="text-gray-600 text-lg mb-4">💻 Language: {language || "Not specified"}</p>
             <a
-                href={html_url || "#"} // Fallback to "#" if html_url is undefined
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-blue-500 hover:underline'
+            href={html_url || "#"} // Fallback to "#" if html_url is undefined
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-blue-500 text-lg hover:underline'
             >
-                View on GitHub
+            View on GitHub
             </a>
         </div>
+       
     );
 }
 

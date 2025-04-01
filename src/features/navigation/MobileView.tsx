@@ -33,11 +33,11 @@ function MobileView() {
 			{isSidebarOpen && (
 				<div className='fixed inset-0 z-40 bg-opacity-50'>
 					{/* Sidebar Navigation */}
-					<div className='fixed top-0 right-0  w-3/4 bg-gradient-to-r from-amber-600 to-yellow-500 shadow-lg p-5 z-50'>
+					<div className='fixed top-0 right-0 w-3/4 bg-dark-blue shadow-lg p-5 z-50 text-white-gold'>
 						<nav className='space-y-5'>
 							<NavLink
 								to='/'
-								className='flex items-center text-white font-bold'
+								className='flex items-center font-bold hover:text-white'
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faHome} className='mr-3' />
@@ -45,7 +45,7 @@ function MobileView() {
 							</NavLink>
 							<NavLink
 								to='/about-me'
-								className='flex items-center text-white font-bold'
+								className='flex items-center font-bold hover:text-white'
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faUser} className='mr-3' />
@@ -53,7 +53,7 @@ function MobileView() {
 							</NavLink>
 							<NavLink
 								to='/my-projects'
-								className='flex items-center text-white font-bold'
+								className='flex items-center font-bold hover:text-white'
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faProjectDiagram} className='mr-3' />
@@ -61,7 +61,7 @@ function MobileView() {
 							</NavLink>
 							<NavLink
 								to='/contact'
-								className='flex items-center text-white font-bold'
+								className='flex items-center font-bold hover:text-white'
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faEnvelope} className='mr-3' />
@@ -69,7 +69,7 @@ function MobileView() {
 							</NavLink>
 							<NavLink
 								to='/skills'
-								className='flex items-center text-white font-bold'
+								className='flex items-center font-bold hover:text-white'
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faCogs} className='mr-3' />

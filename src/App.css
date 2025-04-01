@@ -1,5 +1,4 @@
 #root {
-	max-width: 1280px;
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
@@ -9,4 +8,18 @@
 
 .main-content {
 	flex: 1;
+}
+
+nav {
+	@apply bg-dark-blue border-b-2 border-white-gold text-white-gold flex items-center justify-between px-8 py-4;
+}
+
+nav a,
+nav i {
+	@apply text-white-gold no-underline mx-4;
+}
+
+nav a:hover,
+nav i:hover {
+	@apply text-white;
 }
