@@ -11,15 +11,23 @@
 }
 
 nav {
-	@apply bg-dark-blue border-b-2 border-white-gold text-white-gold flex items-center justify-between px-8 py-4;
+	background-color: #001f3f; /* Equivalent to bg-dark-blue */
+	border-bottom: 2px solid #FFD700; /* Equivalent to border-b-2 border-white-gold */
+	color: #FFD700; /* Equivalent to text-white-gold */
+	display: flex; /* Equivalent to flex */
+	align-items: center; /* Equivalent to items-center */
+	justify-content: space-between; /* Equivalent to justify-between */
+	padding: 1rem 2rem; /* Equivalent to px-8 py-4 */
 }
 
 nav a,
 nav i {
-	@apply text-white-gold no-underline mx-4;
+	color: #FFD700; /* Equivalent to text-white-gold */
+	text-decoration: none; /* Equivalent to no-underline */
+	margin: 0 1rem; /* Equivalent to mx-4 */
 }
 
 nav a:hover,
 nav i:hover {
-	@apply text-white;
+	color: white;
 }
