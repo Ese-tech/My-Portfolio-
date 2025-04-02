@@ -1,4 +1,4 @@
-import { FiGithub, FiGlobe } from "react-icons/fi";
+// import { FiGithub, FiGlobe } from "react-icons/fi";
 
 function Skills() {
     return <>Skills</>;
