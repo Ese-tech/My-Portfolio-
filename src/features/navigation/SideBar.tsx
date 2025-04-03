@@ -10,7 +10,7 @@ import {
 
 function SideBar() {
 	return (
-		<div className='hidden lg:block fixed left-0 top-0 h-full w-64 bg-dark-blue shadow-lg z-50 text-2xl font-bold text-white-gold'>
+		<div className='navb hidden lg:block fixed left-0 top-0 h-full w-64  shadow-lg z-50 text-2xl font-bold text-white-gold'>
 			<div className='flex justify-between items-center p-5 border-b border-white-gold'>
 				<h2 className='text-4xl font-extrabold mt-10 mb-36 p-8'>Menu</h2>
 			</div>
@@ -24,7 +24,10 @@ function SideBar() {
 							: "text-white-gold hover:text-white flex items-center"
 					}
 				>
-					<FontAwesomeIcon icon={faHome} className='mr-3 mb-2.5' />
+					<FontAwesomeIcon
+						icon={faHome}
+						className='mr-3 mb-2.5 icon-white-gold'
+					/>
 					Home
 				</NavLink>
 				<NavLink

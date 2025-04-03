@@ -16,33 +16,48 @@ export function NavBar() {
 	return (
 		<>
 			{/* Tablet View */}
-			<div className='hidden md:flex lg:hidden fixed top-0 left-0 w-full bg-dark-blue shadow-lg z-50 font-bold text-xl text-white-gold'>
+			<div className='navb hidden md:flex lg:hidden fixed top-0 left-0 w-full  bg-slate-600  shadow-lg z-50 font-bold text-xl text-white-gold'>
 				<nav className='flex flex-row justify-center space-x-5 p-4'>
 					<NavLink to='/' className='flex items-center hover:text-white'>
-						<FontAwesomeIcon icon={faHome} className='mr-3 mb-2.5' />
-						Home
+						<FontAwesomeIcon
+							icon={faHome}
+							className='mr-3 mb-2.5 icon-white-gold'
+						/>
+						<span className='text-white-gold'>Home</span>
 					</NavLink>
 					<NavLink
 						to='/about-me'
 						className='flex items-center hover:text-white'
 					>
-						<FontAwesomeIcon icon={faUser} className='mr-3 mb-2.5' />
-						About Me
+						<FontAwesomeIcon
+							icon={faUser}
+							className='mr-3 mb-2.5 icon-white-gold'
+						/>
+						<span className='text-white-gold'>About Me</span>
 					</NavLink>
 					<NavLink
 						to='/my-projects'
 						className='flex items-center hover:text-white'
 					>
-						<FontAwesomeIcon icon={faProjectDiagram} className='mr-3 mb-1.5' />
-						My Projects
+						<FontAwesomeIcon
+							icon={faProjectDiagram}
+							className='mr-3 mb-1.5 icon-white-gold'
+						/>
+						<span className='text-white-gold'>My Projects</span>
 					</NavLink>
 					<NavLink to='/contact' className='flex items-center hover:text-white'>
-						<FontAwesomeIcon icon={faEnvelope} className='mr-3 mb-1.5' />
-						Contact
+						<FontAwesomeIcon
+							icon={faEnvelope}
+							className='mr-3 mb-1.5 icon-white-gold'
+						/>
+						<span className='text-white-gold'>Contact</span>
 					</NavLink>
 					<NavLink to='/skills' className='flex items-center hover:text-white'>
-						<FontAwesomeIcon icon={faCogs} className='mr-3 mb-2.5' />
-						Skills
+						<FontAwesomeIcon
+							icon={faCogs}
+							className='mr-3 mb-2.5 icon-white-gold'
+						/>
+						<span className='text-white-gold'>Skills</span>
 					</NavLink>
 				</nav>
 			</div>

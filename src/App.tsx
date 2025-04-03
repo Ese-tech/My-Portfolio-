@@ -10,11 +10,11 @@ function App() {
 		<SidebarProvider>
 			<BrowserRouter>
 				<SideBar />
-				<div className='main-content'>
+				
 					<MainRoutes />
 					<NavBar />
 					<SocialMedia />
-				</div>
+				
 			</BrowserRouter>
 		</SidebarProvider>
 	);

@@ -42,7 +42,6 @@ function SocialMedia() {
 					className='text-amber-700 text-2xl'
 					style={{
 						writingMode: "vertical-rl",
-						
 					}}
 				>
 					example@example.com

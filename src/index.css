@@ -4,12 +4,12 @@
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
-	width: 100%;
-	height: 100%;
+	/* width: 100%;
+	height: 100%; */
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #fffafa;
+	background-color: linear-gradient(to bottom right, #98999c, #f6f7fa);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -17,35 +17,34 @@
 	-moz-osx-font-smoothing: grayscale;
 	border: 2px solid #000;
 
-	--white-gold: #d4af37; /* Define white-gold color */
-	--dark-blue: #2b2e3d; /* Dark blue for nav and sidebar */
+	--white-gold: linear-gradient(135deg, #e9dbaf, #fff8dc); /* Gradient white-gold color */
+	--white-gold-shiny: radial-gradient(circle, #fff8dc, #e9dbaf, #d4c28a); /* Shiny effect */
+	--dark-blue: #52576b; /* Dark blue for nav and sidebar */
 }
 
 body {
-	@apply bg-gradient-to-br from-gray-200 to-gray-100 text-gray-800;
+	background: linear-gradient(to bottom right, #98999c, #f6f7fa);
+	color: #1f2937;
 	margin: 0;
 	padding: 0;
-	display: flex;
+	/* display: flex; */
 }
 
 .text-gold-500 {
-	color: #ffd700;
+	color: #ece2a6;
 }
 
 .font-bold {
 	font-weight: bold;
 }
 
-.hover\:text-gold-500:hover {
-	color: #ffd700;
-}
 
 .transition-transform {
 	transition: transform 0.3s ease-in-out;
 }
 
 .bg-white {
-	background-color: white;
+	background-color: rgb(226, 230, 238);
 }
 
 .rounded-lg {
@@ -54,19 +53,24 @@ body {
 
 .shadow-lg {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+	
 }
 
-.text-white-gold {
-	color: var(--white-gold);
+.text-white-gold, .text-4xl  {
+	background: var(--white-gold-shiny);
+background-clip: text;
+-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.border-white-gold {
-	border-color: var(--white-gold);
+.navb {
+	background: var(--dark-blue);
+	border-width: 2px;
+	border-style: solid;
+	border-image: var(--white-gold-shiny) 1;
 }
 
-.bg-dark-blue {
-	background-color: var(--dark-blue);
-}
+
 
 @media (min-width: 1024px) {
 	.main-content {
