@@ -16,8 +16,8 @@ export function NavBar() {
 	return (
 		<>
 			{/* Tablet View */}
-			<div className='navb hidden md:flex lg:hidden fixed top-0 left-0 w-full  bg-slate-600  shadow-lg z-50 font-bold text-xl text-white-gold'>
-				<nav className='flex flex-row justify-center space-x-5 p-4'>
+			<div className='navb hidden md:flex lg:hidden fixed top-0 left-0 w-full h-16 bg-slate-600 shadow-lg z-50 font-bold text-xl text-white-gold pl-28'>
+				<nav className='flex flex-row space-x-5 p-4'>
 					<NavLink to='/' className='flex items-center hover:text-white'>
 						<FontAwesomeIcon
 							icon={faHome}

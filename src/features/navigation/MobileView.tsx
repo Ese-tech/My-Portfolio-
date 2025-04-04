@@ -15,15 +15,12 @@ function MobileView() {
 	const { isSidebarOpen, toggleSidebar } = useSidebarContext();
 
 	return (
-		<div className=' navb fixed top-0 left-0 w-full z-50 shadow-md md:hidden'>
+		<div className='navb fixed top-0 left-0 w-full h-16 z-50 shadow-md md:hidden'>
 			{/* Hamburger Menu Button */}
 			<div className='flex justify-between items-center p-5'>
 				<div className='ml-auto'>
 					<button className='text-3xl' onClick={toggleSidebar}>
-						<FontAwesomeIcon
-							icon={isSidebarOpen ? faTimes : faBars}
-							
-						/>
+						<FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
 					</button>
 				</div>
 			</div>
@@ -39,10 +36,7 @@ function MobileView() {
 								className='flex items-center nav-item'
 								onClick={toggleSidebar}
 							>
-								<FontAwesomeIcon
-									icon={faHome}
-									className='mr-3 '
-								/>
+								<FontAwesomeIcon icon={faHome} className='mr-3 ' />
 								Home
 							</NavLink>
 							<NavLink
@@ -50,10 +44,7 @@ function MobileView() {
 								className='flex items-center nav-item'
 								onClick={toggleSidebar}
 							>
-								<FontAwesomeIcon
-									icon={faUser}
-									className='mr-3 '
-								/>
+								<FontAwesomeIcon icon={faUser} className='mr-3 ' />
 								About Me
 							</NavLink>
 							<NavLink
@@ -61,10 +52,7 @@ function MobileView() {
 								className='flex items-center nav-item'
 								onClick={toggleSidebar}
 							>
-								<FontAwesomeIcon
-									icon={faProjectDiagram}
-									className='mr-3 '
-								/>
+								<FontAwesomeIcon icon={faProjectDiagram} className='mr-3 ' />
 								My Projects
 							</NavLink>
 							<NavLink
@@ -72,10 +60,7 @@ function MobileView() {
 								className='flex items-center nav-item'
 								onClick={toggleSidebar}
 							>
-								<FontAwesomeIcon
-									icon={faEnvelope}
-									className='mr-3 '
-								/>
+								<FontAwesomeIcon icon={faEnvelope} className='mr-3 ' />
 								Contact
 							</NavLink>
 							<NavLink
@@ -83,10 +68,7 @@ function MobileView() {
 								className='flex items-center nav-item'
 								onClick={toggleSidebar}
 							>
-								<FontAwesomeIcon
-									icon={faCogs}
-									className='mr-3 '
-								/>
+								<FontAwesomeIcon icon={faCogs} className='mr-3 ' />
 								Skills
 							</NavLink>
 						</nav>

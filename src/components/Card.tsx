@@ -55,7 +55,7 @@ function Card() {
 	} = repoData;
 
 	return (
-		<div className='p-12 border rounded shadow-md bg-white w-7xl h-full  flex flex-col justify-center items-center flex-wrap mx-auto mt-52 ml-28 text-center'>
+		<div className='card px-5 w-f h- mt-36 p-22  rounded-lg shadow-lg bg-white'>
 			<h2 className='text-4xl font-bold mb-4'>{name || "No name available"}</h2>
 			<p className='text-gray-700 text-lg mb-4'>
 				{description || "No description available"}

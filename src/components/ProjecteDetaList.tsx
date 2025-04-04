@@ -33,8 +33,8 @@ const ProjectsDetaList = () => {
 	}, []);
 
 	return (
-		<div className='projects-container mt-18 px-32   border-amber-950 border-2 w-auto h- mx-auto p-8 rounded-lg shadow-lg bg-white'>
-			<h2 className='text-3xl font-extrabold text-gray-800 mb-6 text-center'>
+		<div className='projects-container  px-5 w-f h- mt-36 p-22  rounded-lg shadow-lg bg-white'>
+			<h2 className='text-3xl font-extrabold text-gray-800 -mt-18 mb-16 text-center'>
 				My Projects
 			</h2>
 			{loading && <p className='text-center text-gray-500'>Loading...</p>}

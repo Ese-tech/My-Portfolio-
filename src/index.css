@@ -4,8 +4,8 @@
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
-	/* width: 100%;
-	height: 100%; */
+	width: 100%;
+	height: 100%;
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
@@ -17,8 +17,17 @@
 	-moz-osx-font-smoothing: grayscale;
 	border: 2px solid #000;
 
-	--white-gold: linear-gradient(135deg, #e9dbaf, #fff8dc); /* Gradient white-gold color */
-	--white-gold-shiny: radial-gradient(circle, #fff8dc, #e9dbaf, #d4c28a); /* Shiny effect */
+	--white-gold: linear-gradient(
+		135deg,
+		#e9dbaf,
+		#fff8dc
+	); /* Gradient white-gold color */
+	--white-gold-shiny: radial-gradient(
+		circle,
+		#fff8dc,
+		#e9dbaf,
+		#d4c28a
+	); /* Shiny effect */
 	--dark-blue: #52576b; /* Dark blue for nav and sidebar */
 }
 
@@ -38,7 +47,6 @@ body {
 	font-weight: bold;
 }
 
-
 .transition-transform {
 	transition: transform 0.3s ease-in-out;
 }
@@ -53,16 +61,15 @@ body {
 
 .shadow-lg {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-	
 }
 
-.text-white-gold, .text-4xl  {
+.text-white-gold,
+.text-4xl {
 	background: var(--white-gold-shiny);
-background-clip: text;
--webkit-background-clip: text;
+	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
 .navb {
 	background: var(--dark-blue);
 	border-width: 2px;
@@ -70,12 +77,28 @@ background-clip: text;
 	border-image: var(--white-gold-shiny) 1;
 }
 
+.main-content {
+	margin-top: 4rem; /* Adjust for Navbar height */
+	margin-left: 12rem; /* Adjust for Sidebar width */
+	padding: 1rem; /* Add padding for better spacing */
+}
 
+.projects-container,
+.card {
+	padding-right: 5rem;
+	margin-right:150px ; /* Add padding to avoid overlap with SocialMedia */
+}
 
 @media (min-width: 1024px) {
 	.main-content {
 		margin-left: 16rem; /* Adjust for sidebar width */
 		padding-top: 0; /* No padding needed for desktop */
+	}
+}
+
+@media (max-width: 1023px) {
+	.main-content {
+		margin-left: 0; /* Remove Sidebar margin for smaller screens */
 	}
 }
 
@@ -87,6 +110,9 @@ background-clip: text;
 	.sidebar {
 		display: flex;
 		flex-direction: column;
+	}
+	.main-content {
+		margin-top: 6rem; /* Adjust for MobileView height */
 	}
 }
 

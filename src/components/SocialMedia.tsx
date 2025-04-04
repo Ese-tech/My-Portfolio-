@@ -9,7 +9,7 @@ import {
 function SocialMedia() {
 	return (
 		<div>
-			<div className='hidden md:flex flex-col items-center space-y-12 font-extrabold  fixed right-4 bottom-24 pr-12'>
+			<div className='hidden md:flex flex-col items-center space-y-12 font-extrabold fixed right-4 bottom-24 pr-12 z-10'>
 				<a
 					href='https://linkedin.com'
 					target='_blank'
@@ -17,11 +17,11 @@ function SocialMedia() {
 				>
 					<FontAwesomeIcon
 						icon={faLinkedin}
-						className='text-blue-700 text-4xl'
+						className='icon text-4xl'
 					/>
 				</a>
 				<a href='https://github.com' target='_blank' rel='noopener noreferrer'>
-					<FontAwesomeIcon icon={faGithub} className='text-blue-500 text-4xl' />
+					<FontAwesomeIcon icon={faGithub} className='icon text-4xl' />
 				</a>
 				<a
 					href='https://facebook.com'
@@ -30,16 +30,19 @@ function SocialMedia() {
 				>
 					<FontAwesomeIcon
 						icon={faFacebook}
-						className='text-blue-700 text-4xl'
+						className='icon text-4xl'
 					/>
 				</a>
 				<a href='https://slack.com' target='_blank' rel='noopener noreferrer'>
-					<FontAwesomeIcon icon={faSlack} className='text-green-500 text-4xl' />
+					<FontAwesomeIcon
+						icon={faSlack}
+						className='icon text-4xl'
+					/>
 				</a>
 				{/* Updated email alignment */}
 				<a
 					href='mailto:example@example.com'
-					className='text-amber-700 text-2xl'
+					className='icon text-2xl'
 					style={{
 						writingMode: "vertical-rl",
 					}}
@@ -49,7 +52,7 @@ function SocialMedia() {
 			</div>
 
 			{/* Mobile View */}
-			<div className='fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-center space-x-4 md:hidden'>
+			<div className='fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-center space-x-4 md:hidden z-10'>
 				<a
 					href='https://linkedin.com'
 					target='_blank'
@@ -57,11 +60,11 @@ function SocialMedia() {
 				>
 					<FontAwesomeIcon
 						icon={faLinkedin}
-						className='text-blue-700 text-xl'
+						className='icon text-xl'
 					/>
 				</a>
 				<a href='https://github.com' target='_blank' rel='noopener noreferrer'>
-					<FontAwesomeIcon icon={faGithub} className='text-blue-500 text-xl' />
+					<FontAwesomeIcon icon={faGithub} className='icon text-xl' />
 				</a>
 				<a
 					href='https://facebook.com'
@@ -70,13 +73,16 @@ function SocialMedia() {
 				>
 					<FontAwesomeIcon
 						icon={faFacebook}
-						className='text-blue-700 text-xl'
+						className='icon text-xl'
 					/>
 				</a>
 				<a href='https://slack.com' target='_blank' rel='noopener noreferrer'>
 					<FontAwesomeIcon icon={faSlack} className='text-green-500 text-xl' />
 				</a>
-				<a href='mailto:example@example.com' className='text-amber-700 text-xl'>
+				<a
+					href='mailto:example@example.com'
+					className='icon text-amber-700 text-xl'
+				>
 					example@example.com
 				</a>
 			</div>
