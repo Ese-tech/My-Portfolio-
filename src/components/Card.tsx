@@ -22,10 +22,7 @@ function Card() {
 				}
 				setRepoData(repo);
 			} catch (err) {
-				setError(err instanceof Error ? err.message : "An error occurred");
-
-
-				
+				setError(err instanceof Error ? err.message : "An error occurred");	
 			} finally {
 				setLoading(false);
 			}
@@ -34,7 +31,7 @@ function Card() {
 		fetchRepo();
 	}, [card]);
 
-	if (loading) {
+	if        (loading) {
 		return <p>Loading...</p>;
 	}
 
