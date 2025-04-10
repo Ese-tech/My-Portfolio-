@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "prettier --config .prettierrc './**/*.{ts,tsx,css,html}' --write",
+    "format": "prettier --config .prettierrc './**/*.{tsx,ts,css,html}' --write",
     "husky": "husky install"
   },
   "dependencies": {
@@ -36,8 +36,6 @@
     "postcss": "^8.5.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0",
-    "prettier": "^3.0.0",
-    "husky": "^8.0.0"
+    "vite": "^6.2.0"
   }
 }

@@ -31,7 +31,7 @@ function Card() {
 		fetchRepo();
 	}, [card]);
 
-	if        (loading) {
+	if (loading) {
 		return <p>Loading...</p>;
 	}
 
