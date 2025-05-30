@@ -32,7 +32,7 @@
 }
 
 body {
-	background: linear-gradient(to bottom right, #98999c, #f6f7fa);
+	background: linear-gradient(to bottom right, #a9acb6, #f6f7fa);
 	color: #1f2937;
 	margin: 0;
 	padding: 0;
@@ -70,6 +70,12 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.skills{
+
+	margin-top: -30px;
+}
+
 .navb {
 	background: var(--dark-blue);
 	border-width: 2px;
@@ -81,6 +87,7 @@ body {
 	margin-top: 4rem; /* Adjust for Navbar height */
 	margin-left: 12rem; /* Adjust for Sidebar width */
 	padding: 1rem; /* Add padding for better spacing */
+
 }
 
 .projects-container,

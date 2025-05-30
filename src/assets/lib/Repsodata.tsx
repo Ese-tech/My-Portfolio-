@@ -11,7 +11,7 @@ export const skillsRow1 = [
 ];
 
 export const skillsRow2 = [
-  { name: "Responsive", icon: "/assets/icons/responsive-design.png", color: "#38B2AC" },
+  { name: "Responsive", icon: "/assets/image/responsive-design.png", color: "#38B2AC" },
   { name: "Terminal", icon: "/assets/icons/terminal-svgrepo-com.svg", color: "#000000" },
   { name: "Tailwind", icon: "/assets/icons/tailwindicon.svg", color: "#38B2AC" },
 ];
