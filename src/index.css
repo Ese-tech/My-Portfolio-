@@ -72,8 +72,10 @@ body {
 }
 
 .skills{
-
-	margin-top: -30px;
+    background-color: aliceblue;
+	width: 1400px;
+	height: 900px;
+	
 }
 
 .navb {
