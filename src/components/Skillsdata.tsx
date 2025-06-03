@@ -1,59 +1,97 @@
-import { skillsRow1, skillsRow2 } from "../assets/lib/Repsodata";
-
+import { skillsRow1, skillsRow2, softSkills } from "../assets/lib/Repsodata";
+import { Skill, SoftSkill  } from "../../src/types/SkillTypes";
 const borderImageStyle = {
     borderImage: "linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet) 1"
 };
 
+const SkillCard = ({ skill }: { skill: Skill }) => (
+    <div
+        className="flex flex-col items-center bg-white border-2 rounded-lg shadow p-3 md:p-4 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
+        style={borderImageStyle}
+    >
+        <img
+            src={skill.icon}
+            alt={skill.name}
+            className="w-8 h-8 md:w-12 md:h-12 mb-2"
+            style={{ color: skill.color }}
+        />
+        <p className="text-gray-800 text-sm md:text-base font-semibold text-center">{skill.name}</p>
+        <p className="text-xs text-gray-500">{skill.level}</p>
+        {skill.projectLink && (
+            <a
+                href={skill.projectLink}
+                className="text-blue-500 underline text-xs mt-1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                See in action
+            </a>
+        )}
+    </div>
+);
+
+const SoftSkillCard = ({ skill }: { skill: SoftSkill }) => (
+    <div
+        className="flex flex-col items-center bg-white border-2 rounded-lg shadow p-3 md:p-4"
+        style={borderImageStyle}
+    >
+        {skill.icon && (
+            <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-8 h-8 mb-2"
+            />
+        )}
+        <p className="text-gray-800 text-sm md:text-base font-semibold text-center">{skill.name}</p>
+    </div>
+);
+
 const SkillsData = () => {
     return (
-        <div className="projects-container px-5 mt-36 mb-12 rounded-lg shadow-lg bg-white">
-            <h2 className="text-5xl pt-5 font-extrabold text-gray-800 mb-10 text-center">
-                <span className="">My</span>
-                <span className=" ml-2">Skills</span>
+        <div className="projects-container px-2 w-full max-w-7xl mx-auto mt-6 mb-2 rounded-lg shadow bg-white">
+            <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-2 text-center">
+                My Skills
             </h2>
-            <p className="text-base md:text-lg text-gray-800 text-center mb-10">
-                Discover the skills that shape my journey as a web developer.<br />
-                Each technology and tool I’ve mastered reflects my commitment to creating high-quality, innovative solutions.
+            <p className="text-xs md:text-sm text-gray-600 text-center mb-2">
+                Discover the skills that shape my journey as a web developer.
             </p>
-            <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 mb-8">
-                {skillsRow1.map((skill, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col items-center bg-white border-2 rounded-lg shadow-lg p-4 md:p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-                        style={borderImageStyle}
-                    >
-                        <img
-                            src={skill.icon}
-                            alt={skill.name}
-                            className="w-12 h-12 md:w-16 md:h-16 mb-3 transition-transform duration-300 hover:scale-110"
-                            style={{ color: skill.color }}
-                        />
-                        <p className="text-gray-800 text-base md:text-lg font-semibold text-center">{skill.name}</p>
-                    </div>
+
+            {/* Frontend Skills */}
+            <div className="text-xs font-bold mb-1 mt-2 text-gray-500 uppercase tracking-wide">Frontend</div>
+            <div className="w-10px grid grid-cols-2 md:grid-cols-3 gap-2 mb-2">
+                {skillsRow1.filter(skill => skill.category === "Frontend").map((skill, index) => (
+                    <SkillCard key={index} skill={skill} />
                 ))}
             </div>
-            <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-                {skillsRow2.map((skill, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col items-center bg-white border-2 rounded-lg shadow-lg p-4 md:p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-                        style={borderImageStyle}
-                    >
-                        <img
-                            src={skill.icon}
-                            alt={skill.name}
-                            className="w-12 h-12 md:w-16 md:h-16 mb-3 transition-transform duration-300 hover:scale-110"
-                            style={{ color: skill.color }}
-                        />
-                        <p className="text-gray-800 text-base md:text-lg font-semibold text-center">{skill.name}</p>
-                    </div>
+
+            {/* Backend Skills */}
+            <div className="text-xs font-bold mb-1 mt-2 text-gray-500 uppercase tracking-wide">Backend</div>
+            <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-2 mb-2">
+                {skillsRow1.filter(skill => skill.category === "Backend").map((skill, index) => (
+                    <SkillCard key={index} skill={skill} />
                 ))}
             </div>
-            <div className="text-center pb-4 text-lg md:text-xl font-bold mt-10 tracking-wide">
+
+            {/* Tools & Platforms */}
+            <div className="text-xs font-bold mb-1 mt-2 text-gray-500 uppercase tracking-wide">Tools & Platforms</div>
+            <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-2 mb-2">
+                {skillsRow2.filter(skill => skill.category === "Tools").map((skill, index) => (
+                    <SkillCard key={index} skill={skill} />
+                ))}
+            </div>
+
+            {/* Soft Skills */}
+            <div className="text-xs font-bold mb-1 mt-2 text-gray-500 uppercase tracking-wide">Soft Skills</div>
+            <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-2 mb-2">
+                {softSkills.map((skill, index) => (
+                    <SoftSkillCard key={index} skill={skill} />
+                ))}
+            </div>
+
+            <div className="text-center pb-1 text-xs md:text-base font-bold mt-2 tracking-wide text-gray-700">
                 Skills that shape my work
             </div>
         </div>
     );
 };
-
 export default SkillsData;
