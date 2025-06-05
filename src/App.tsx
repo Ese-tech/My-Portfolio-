@@ -10,7 +10,7 @@ function App() {
 		<SidebarProvider>
 			<BrowserRouter>
 				<SideBar />
-				<div className='main-content'>
+				<div className='main-content w-full'>
 					<NavBar />
 					<MainRoutes />
 					<SocialMedia />

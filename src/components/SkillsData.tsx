@@ -1,5 +1,5 @@
 import { skillsRow1, skillsRow2, softSkills } from "../assets/lib/Repsodata";
-import { Skill, SoftSkill  } from "../../src/types/SkillTypes";
+import { Skill, SoftSkill  } from "../types/SkillTypes";
 const borderImageStyle = {
     borderImage: "linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet) 1"
 };
@@ -48,7 +48,7 @@ const SoftSkillCard = ({ skill }: { skill: SoftSkill }) => (
 
 const SkillsData = () => {
     return (
-        <div className="projects-container px-2 w-full max-w-7xl mx-auto mt-6 mb-2 rounded-lg shadow bg-white">
+        <div className="skills-container px-2 w-full mx-auto mt-6 mb-2 rounded-lg shadow bg-white">
             <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-2 text-center">
                 My Skills
             </h2>

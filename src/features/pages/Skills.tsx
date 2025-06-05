@@ -1,4 +1,4 @@
-import SkillsData from "../../components/Skillsdata";
+import SkillsData from "../../components/SkillsData";
 
 const Skills = () => {
     return <SkillsData />;

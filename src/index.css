@@ -15,7 +15,7 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	border: 2px solid #000;
+	/* border: 2px solid #000; */
 
 	--white-gold: linear-gradient(
 		135deg,
@@ -92,7 +92,7 @@ body {
 
 }
 
-.projects-container,
+/* .projects-container, */
 .card {
 	padding-right: 5rem;
 	margin-right:150px ; /* Add padding to avoid overlap with SocialMedia */

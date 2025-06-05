@@ -33,23 +33,23 @@ const ProjectsDetaList = () => {
 	}, []);
 
 	return (
-		<div className='projects-container  px-5 w-f h- mt-36 p-22  rounded-lg shadow-lg bg-white'>
+		<div className='projects-container  px-5 mt-36 p-22  rounded-lg shadow-lg bg-white'>
 			<h2 className='text-3xl font-extrabold text-gray-800 -mt-18 mb-16 text-center'>
 				My Projects
 			</h2>
 			{loading && <p className='text-center text-gray-500'>Loading...</p>}
 			{error && <p className='text-center text-red-500'>{error}</p>}
-			<ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+			<ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 '>
 				{repos.map((repo) => (
 					<Link
 						to={`/my-projects/${repo.name}`} // Pass the name directly
 						key={repo.id}
 					>
 						<li
-							className='border rounded-lg shadow-lg p-6 bg-white hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between h-full'
+							className='border rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between h-full'
 							style={{
 								borderImage:
-									"linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet) 1",
+									"linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet) 1"
 							}}
 						>
 							<h3 className='text-xl text-amber-500 font-bold mb-3'>
