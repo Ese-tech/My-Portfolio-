@@ -48,13 +48,14 @@ const SoftSkillCard = ({ skill }: { skill: SoftSkill }) => (
 
 const SkillsData = () => {
     return (
-        <div className="skills-container px-2 w-full mx-auto mt-6 mb-2 rounded-lg shadow bg-white">
-            <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-2 text-center">
-                My Skills
-            </h2>
-            <p className="text-xs md:text-sm text-gray-600 text-center mb-2">
-                Discover the skills that shape my journey as a web developer.
-            </p>
+        <div className="flex justify-center items-start min-h-[80vh]">
+            <div className="skills-container w-full max-w-7xl mr-115 mx-auto mt-16 mb-4 rounded-lg shadow bg-white px-4">
+                <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-2 text-center">
+                    My Skills
+                </h2>
+                <p className="text-xs md:text-sm text-gray-600 text-center mb-2">
+                    Discover the skills that shape my journey as a web developer.
+                </p>
 
             {/* Frontend Skills */}
             <div className="text-xs font-bold mb-1 mt-2 text-gray-500 uppercase tracking-wide">Frontend</div>
@@ -88,8 +89,9 @@ const SkillsData = () => {
                 ))}
             </div>
 
-            <div className="text-center pb-1 text-xs md:text-base font-bold mt-2 tracking-wide text-gray-700">
-                Skills that shape my work
+         <div className="text-center pb-1 text-xs md:text-base font-bold mt-2 tracking-wide text-gray-700">
+                    Skills that shape my work
+                </div>
             </div>
         </div>
     );

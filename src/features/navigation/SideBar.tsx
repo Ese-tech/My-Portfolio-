@@ -12,7 +12,7 @@ function SideBar() {
 	return (
 		<div className='navb hidden lg:block fixed left-0 top-0 h-full w-48 shadow-lg z-50 text-2xl font-bold text-white-gold'>
 			<div className='flex justify-between items-center p-5 border-b border-white-gold'>
-				<h2 className='text-4xl font-extrabold mt-10 mb-36 p-8'>Menu</h2>
+				<h2 className='text-4xl font-extrabold mt-10 mb-10  p-8'>Menu</h2>
 			</div>
 			<nav className='flex flex-col p-8 space-y-18'>
 				<NavLink
