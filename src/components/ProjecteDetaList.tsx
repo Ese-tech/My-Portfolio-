@@ -33,7 +33,7 @@ const ProjectsDetaList = () => {
 	}, []);
 
 	return (
-		<div className='projects-container  px-5 mt-36 p-22  rounded-lg shadow-lg bg-white'>
+		<div className='projects-container ml-23 px-5 mt-36 p-22  rounded-lg shadow-lg bg-white w-full max-w-7xl mx-auto'>
 			<h2 className='text-3xl font-extrabold text-gray-800 -mt-18 mb-16 text-center'>
 				My Projects
 			</h2>
@@ -46,7 +46,7 @@ const ProjectsDetaList = () => {
 						key={repo.id}
 					>
 						<li
-							className='border rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between h-full'
+							className='rounded-lg shadow-lg bg-white hover:shadow-xl border-2 transition-shadow duration-300 flex flex-col justify-between h-full'
 							style={{
 								borderImage:
 									"linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet) 1"

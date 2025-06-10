@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 #root {
+	overflow-x: hidden;
+    min-height: 100vh;
+    height: 100%;
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
@@ -32,9 +35,10 @@
 
 }
 
-body {
-	width: 100%;
-	height: 100%;
+ body {
+	min-height: 100vh;
+    height: 100%;
+    width: 100vw;
 	color: #1f2937;
 	margin: 0;
 	padding: 0;
@@ -104,6 +108,14 @@ body {
 .card {
 	padding-right: 5rem;
 	margin-right:150px ; /* Add padding to avoid overlap with SocialMedia */
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fade-in {
+  animation: fade-in 0.7s ease;
 }
 
 @media (min-width: 1024px) {
