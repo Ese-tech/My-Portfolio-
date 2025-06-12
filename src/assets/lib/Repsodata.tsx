@@ -155,7 +155,7 @@ export const reposdata = [
     technologiesTags: ["Typescript", "Tailwind CSS", "Bun"],
     links: {
       githubUrl: "https://github.com/Ese-tech/Color-Changer",
-      vercelUrl: "https://color-changer-three-blue.vercel.app/",
+      vercelUrl: "https://ese-tech.github.io/Color-Changer/",
     },
   },
   {

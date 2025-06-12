@@ -6,7 +6,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => (
     <div
         className="rounded-full p-[5px] w-40 h-40 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl animate-fade-in"
         style={{
-            background: "linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet)"
+            background: "linear-gradient(to bottom right, white, khaki, dimgray)"
         }}
     >
         <div className="flex flex-col items-center bg-white rounded-full shadow p-6 w-36 h-36 justify-center">
@@ -36,7 +36,7 @@ const SoftSkillCard = ({ skill }: { skill: SoftSkill }) => (
     <div
         className="rounded-full p-[5px] w-40 h-40 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl animate-fade-in"
         style={{
-            background: "linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet)"
+            background: "linear-gradient(to bottom right, white, khaki, dimgray)"
         }}
     >
         <div className="flex flex-col items-center bg-white rounded-full shadow p-6 w-36 h-36 justify-center">

@@ -55,12 +55,15 @@ function Card() {
 	} = repoData;
 
 	return (
-		<div className='card px-5 w-f h- mt-36 p-22  rounded-lg shadow-lg bg-white'>
-			<h2 className='text-4xl font-bold mb-4'>{name || "No name available"}</h2>
-			<p className='text-gray-700 text-lg mb-4'>
+		<div className='card px-5 w-4xl h-auto mt-36 p-22 ml-60 rounded-lg shadow-lg bg-white flex flex-col items-center'>
+			<img
+				src={`https://github-readme-stats.vercel.app/api/pin/?username=Ese-tech&repo=${name}&theme=radical`}
+			/>
+			<h2 className='text-4xl font-bold mb-4 '>{name || "No name available"}</h2>
+			<p className='text-gray-700 text-xl mb-4'>
 				{description || "No description available"}
 			</p>
-			<p className='text-gray-600 text-lg mb-2'>
+			<p className='text-gray-600 text-xl mb-2'>
 				⭐ Stars: {stargazers_count || 0}
 			</p>
 			<p className='text-gray-600 text-lg mb-2'>
@@ -83,6 +86,16 @@ function Card() {
 			>
 				View on GitHub
 			</a>
+			<div className='mt-4'>
+				<a
+					href={`https://ese-tech.github.io/${name}`}
+					target='_blank'
+					rel='noopener noreferrer'
+					className='text-blue-500 text-lg hover:underline'
+				>
+					View web
+				</a>
+			</div>
 		</div>
 	);
 }
