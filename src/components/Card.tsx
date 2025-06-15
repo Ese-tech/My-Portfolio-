@@ -1,13 +1,15 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
-import {
-	GitHubRepo,
-	fetchGithubUserRepos,
-} from "../services/GithubFetchServices";
+import { reposdata } from "../assets/lib/Repsodata";
+import { RepoData } from "../types/RepoTypes";
+// import {
+// 	GitHubRepo,
+// 	fetchGithubUserRepos,
+// } from "../services/GithubFetchServices";
 
 function Card() {
 	const { card } = useParams<{ card: string }>(); // Get card from route parameters
-	const [repoData, setRepoData] = useState<GitHubRepo | null>(null);
+	const [repoData, setRepoData] = useState<RepoData | null>(null);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
 
@@ -15,7 +17,7 @@ function Card() {
 		const fetchRepo = async () => {
 			setLoading(true);
 			try {
-				const repos = await fetchGithubUserRepos(); // Fetch all repositories
+				const repos = reposdata; // Use local data
 				const repo = repos.find((repo) => repo.name === card); // Find the repo by name
 				if (!repo) {
 					throw new Error("Repository not found");

@@ -27,6 +27,14 @@ export const skillsRow1 = [
     category: "Frontend",
     level: "Intermediate",
   },
+
+  {
+    name: "TypeScript",
+    icon: "/assets/icons/typescripticon.svg",
+    color: "#007ACC",
+    category: "Frontend",
+    level: "Intermediate",
+  },
   {
     name: "Node.js",
     icon: "/assets/icons/nodejsicon.svg",
@@ -35,21 +43,35 @@ export const skillsRow1 = [
     level: "Intermediate",
   },
   {
-    name: "Git",
-    icon: "/assets/icons/Git-Icon-1788C.svg",
-    color: "#F05032",
-    category: "Tools",
+    name: "Next.js",
+    icon: "/assets/icons/nextjsicon.svg",
+    color: "#000000",
+    category: "Backend",
     level: "Intermediate",
   },
   {
-    name: "GitHub",
-    icon: "/assets/icons/github-color.svg",
-    color: "#181717",
-    category: "Tools",
+    name: "Express.js",
+    icon: "/assets/icons/expressicon.svg",
+    color: "#000000",
+    category: "Backend",
     level: "Intermediate",
   },
   {
-    name: "SASS",
+    name: "MongoDB",
+    icon: "/assets/icons/mongoicon.svg",
+    color: "#47A248",
+    category: "Backend",
+    level: "Intermediate",
+  },
+    {
+    name: "Tailwind",
+    icon: "/assets/icons/tailwindicon.svg",
+    color: "#38B2AC",
+    category: "Frontend",
+    level: "Intermediate",
+  },
+  {
+    name: "SASS/SCSS",
     icon: "/assets/icons/sassicon.svg",
     color: "#CC6699",
     category: "Frontend",
@@ -65,6 +87,13 @@ export const skillsRow2 = [
     category: "Frontend",
     level: "Advanced",
   },
+    {
+    name: "GitHub",
+    icon: "/assets/icons/github-color.svg",
+    color: "#181717",
+    category: "Tools",
+    level: "Intermediate",
+  },
   {
     name: "Terminal",
     icon: "/assets/icons/terminal-svgrepo-com.svg",
@@ -72,13 +101,14 @@ export const skillsRow2 = [
     category: "Tools",
     level: "Intermediate",
   },
-  {
-    name: "Tailwind",
-    icon: "/assets/icons/tailwindicon.svg",
-    color: "#38B2AC",
-    category: "Frontend",
+    {
+    name: "Git",
+    icon: "/assets/icons/Git-Icon-1788C.svg",
+    color: "#F05032",
+    category: "Tools",
     level: "Intermediate",
   },
+
 ];
 
 export const softSkills = [
@@ -149,6 +179,7 @@ export const skillsDataWeb = [
 
 export const reposdata = [
   {
+    id: 1,
     name: "Color-Changer",
     description: "A simple color changer app",
     image: "",
@@ -157,8 +188,15 @@ export const reposdata = [
       githubUrl: "https://github.com/Ese-tech/Color-Changer",
       vercelUrl: "https://ese-tech.github.io/Color-Changer/",
     },
+    html_url: "https://github.com/Ese-tech/Color-Changer",
+    stargazers_count: 0,
+    topics: ["color", "app"],
+    created_at: "2024-01-01T00:00:00Z",
+    updated_at: "2024-01-02T00:00:00Z",
+    language: "TypeScript",
   },
   {
+    id: 2,
     name: "Todo-App",
     description: "A simple todo app",
     image: "",
@@ -167,5 +205,11 @@ export const reposdata = [
       githubUrl: "https://github.com/Ese-tech/Todo-app",
       vercelUrl: "https://todo-app-sable-tau.vercel.app/",
     },
+    html_url: "https://github.com/Ese-tech/Todo-app",
+    stargazers_count: 0,
+    topics: ["todo", "app"],
+    created_at: "2024-01-01T00:00:00Z",
+    updated_at: "2024-01-02T00:00:00Z",
+    language: "TypeScript",
   },
 ];
