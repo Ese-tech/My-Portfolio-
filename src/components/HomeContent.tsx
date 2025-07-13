@@ -55,7 +55,7 @@ function HomeContent() {
             {['React', 'TypeScript', 'Node.js', 'MongoDB', 'Bun', 'Vite', 'Tailwind CSS'].map((skill) => (
               <span 
                 key={skill}
-                className="px-5 py-3 bg-gradient-to-r from-slate-100 to-slate-200 hover:from-teal-100 hover:to-blue-100 dark:from-slate-700 dark:to-slate-800 dark:hover:from-teal-800 dark:hover:to-blue-800 text-slate-700 hover:text-slate-800 dark:text-slate-300 dark:hover:text-slate-200 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border border-slate-300 hover:border-teal-400 dark:border-slate-600 dark:hover:border-teal-500"
+                className="px-5 py-3 bg-gradient-to-r from-slate-100 to-slate-200 hover:from-teal-100 hover:to-blue-100 text-slate-700 hover:text-slate-800 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border border-slate-300 hover:border-teal-400"
               >
                 {skill}
               </span>
@@ -69,30 +69,30 @@ function HomeContent() {
           {/* Primary CTA - View Projects */}
           <Link 
             to={ROUTES_PATHS.MY_PROJECTS}
-            className="w-full sm:w-auto group bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 dark:from-slate-600 dark:to-slate-700 dark:hover:from-slate-700 dark:hover:to-slate-800 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+            className="w-full sm:w-auto group bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
           >
             <FontAwesomeIcon icon={faEye} className="mr-3 group-hover:animate-pulse" />
-            {t('exploreWork')}
+            View My Projects
           </Link>
 
           {/* Secondary CTA - About Me */}
           <Link 
             to={ROUTES_PATHS.ABOUT_ME}
-            className="w-full sm:w-auto group border-2 border-teal-500 text-teal-600 dark:text-teal-400 hover:bg-gradient-to-r hover:from-teal-500 hover:to-blue-500 hover:text-white dark:hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+            className="w-full sm:w-auto group border-2 border-teal-500 text-teal-600 hover:bg-gradient-to-r hover:from-teal-500 hover:to-blue-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
           >
             <FontAwesomeIcon icon={faUser} className="mr-3" />
-            {t('aboutMe')}
+            About Me
           </Link>
 
           {/* Tertiary CTA - Download CV */}
-          <a 
-            href="/assets/cv/ese-osagie-cv.pdf" 
-            download
-            className="w-full sm:w-auto group bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faDownload} className="mr-3 group-hover:animate-bounce" />
-            Download CV
-          </a>
+            <a 
+              href="/assets/cv/ese-osagie-cv.pdf" 
+              download
+              className="w-full sm:w-auto group bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+            >
+              <FontAwesomeIcon icon={faDownload} className="mr-3 group-hover:animate-bounce" />
+              Download CV
+            </a>
         </div>
 
         {/* Quick Stats */}
@@ -116,11 +116,11 @@ function HomeContent() {
         </div>
 
         {/* Contact CTA */}
-        <div className="bg-gradient-to-br from-slate-800 to-slate-900 dark:from-slate-700 dark:to-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl dark:shadow-slate-900/50 transition-all duration-300 transform hover:-translate-y-1 mx-4 border border-slate-600 hover:border-teal-500 dark:border-slate-500 dark:hover:border-teal-400">
+        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 mx-4 border border-slate-600 hover:border-teal-500">
           <h3 className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent mb-4">
             Let's Work Together!
           </h3>
-          <p className="text-slate-300 dark:text-slate-200 mb-6 max-w-2xl mx-auto">
+          <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
             I'm always interested in new opportunities and exciting projects.
           </p>
           <Link 
@@ -128,7 +128,7 @@ function HomeContent() {
             className="inline-flex items-center bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
           >
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-            {t('getInTouch')}
+            Get In Touch
           </Link>
         </div>
 
@@ -140,7 +140,7 @@ function HomeContent() {
               className="text-2xl text-teal-500 hover:text-teal-400 transition-colors duration-300"
             />
           </div>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+          <p className="text-sm text-gray-500 mt-2">
             Explore my work below
           </p>
         </div>

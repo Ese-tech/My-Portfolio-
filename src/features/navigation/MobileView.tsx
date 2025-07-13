@@ -20,7 +20,7 @@ function MobileView() {
 		<>
 			{/* Hamburger Menu Button */}
 			<div className='flex justify-between items-center p-4'>
-				<h3 className='text-xl font-bold bg-gradient-to-r from-teal-400 to-gold-400 bg-clip-text text-transparent'>Ese Osagie</h3>
+				<h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg'>Ese Osagie</h2>
 				<button
 					className='text-2xl text-white hover:text-teal-300 transition-colors duration-300'
 					onClick={toggleSidebar}

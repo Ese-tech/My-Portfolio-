@@ -112,13 +112,13 @@ export const skillsRow2 = [
 ];
 
 export const softSkills = [
-  { name: "Communication", icon: "/assets/image/networking.png" },
-  { name: "Teamwork", icon: "/assets/image/teamwork.png" },
-  { name: "Problem Solving", icon: "/assets/image/problem-solving.png" },
-  { name: "Adaptability", icon: "/assets/image/adaptability.png" },
-  { name: "Time Management", icon: "/assets/image/time-management.png" },
-  { name: "Creativity", icon: "/assets/image/creative.png" },
-  { name: "Critical Thinking", icon: "/assets/image/critical-thinking.png" },
+  { name: "Communication", icon: "assets/image/massage.png" },
+  { name: "Teamwork", icon: "assets/image/teamwork.png" },
+  { name: "Problem Solving", icon: "assets/image/problem-solving.png" },
+  { name: "Adaptability", icon: "assets/image/adaptability.png" },
+  { name: "Time Management", icon: "assets/image/time-management.png" },
+  { name: "Creativity", icon: "assets/image/creative.png" },
+  { name: "Critical Thinking", icon: "assets/image/critical-thinking.png" },
 ];
 
 export const skillsDataWeb = [
