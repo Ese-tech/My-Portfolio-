@@ -5,6 +5,7 @@ import AboutMe from "../pages/AboutMe";
 import MyProjects from "../pages/MyProjects";
 import Contact from "../pages/Contact";
 import ROUTES_PATHS from "./Routes_Paths";
+import Card from "../../components/Card";
 
 function MainRoutes() {
 	return (
@@ -12,6 +13,7 @@ function MainRoutes() {
 			<Route path={ROUTES_PATHS.HOME} element={<Home />} />
 			<Route path={ROUTES_PATHS.ABOUT_ME} element={<AboutMe />} />
 			<Route path={ROUTES_PATHS.MY_PROJECTS} element={<MyProjects />} />
+			<Route path={ROUTES_PATHS.CARD} element={<Card />} />
 			<Route path={ROUTES_PATHS.CONTACT} element={<Contact />} />
 			<Route path={ROUTES_PATHS.SKILLS} element={<Skills />} />
 		</Routes>

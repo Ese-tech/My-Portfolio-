@@ -4,6 +4,7 @@ const ROUTES_PATHS = {
     MY_PROJECTS: '/my-projects',
     CONTACT: '/contact',
     SKILLS: '/skills',
+    CARD: '/my-projects/:card',
 } as const ;
 
 export default ROUTES_PATHS;

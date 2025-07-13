@@ -1,31 +1,59 @@
 @import "tailwindcss";
 
-:root {
+#root {
+	overflow-x: hidden;
+    min-height: 100vh;
+    height: 100%;
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
+	
+	
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #fffafa;
+	
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	border:2px solid #000;
+
+
+	--white-gold: linear-gradient(
+		135deg,
+		#e9dbaf,
+		#fff8dc
+	); /* Gradient white-gold color */
+	--white-gold-shiny: radial-gradient(
+		circle,
+		#fff8dc,
+		#e9dbaf,
+		#d4c28a
+	); /* Shiny effect */
+	--dark-blue: #52576b; /* Dark blue for nav and sidebar */
+
+}
+
+ body {
+	min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+	color: #1f2937;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom right, #a9acb6, #f6f7fa);
+	background-repeat: no-repeat;
+    background-size: cover;
+	/* display: flex; */
 }
 
 .text-gold-500 {
-	color: #ffd700;
+	color: #ece2a6;
 }
 
 .font-bold {
 	font-weight: bold;
-}
-
-.hover\:text-gold-500:hover {
-	color: #ffd700;
 }
 
 .transition-transform {
@@ -33,7 +61,7 @@
 }
 
 .bg-white {
-	background-color: white;
+	background-color: rgb(226, 230, 238);
 }
 
 .rounded-lg {
@@ -44,6 +72,65 @@
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
+.text-white-gold,
+.text-4xl {
+	background: var(--white-gold-shiny);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.skill-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+	gap: 1rem; /* Add space between skill items */
+}
+
+/* .skills{
+    background-color: aliceblue;
+} */
+
+.navb {
+	background: var(--dark-blue);
+	border-width: 2px;
+	border-style: solid;
+	border-image: var(--white-gold-shiny) 1;
+}
+
+.main-content {
+	margin-top: 4rem; /* Adjust for Navbar height */
+	margin-left: 12rem; /* Adjust for Sidebar width */
+	padding: 1rem;/*  Add padding for better spacing */
+
+}
+
+/* .projects-container, */
+.card {
+	padding-right: 5rem;
+	margin-right:150px ; /* Add padding to avoid overlap with SocialMedia */
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fade-in {
+  animation: fade-in 0.7s ease;
+}
+
+@media (min-width: 1024px) {
+	.main-content {
+		margin-left: 16rem; /* Adjust for sidebar width */
+		padding-top: 0; /* No padding needed for desktop */
+	}
+}
+
+@media (max-width: 1023px) {
+	.main-content {
+		margin-left: 0; /* Remove Sidebar margin for smaller screens */
+	}
+}
+
 @media (max-width: 767px) {
 	/* Smartphone styles */
 	.navbar {
@@ -52,6 +139,9 @@
 	.sidebar {
 		display: flex;
 		flex-direction: column;
+	}
+	.main-content {
+		margin-top: 6rem; /* Adjust for MobileView height */
 	}
 }
 
@@ -78,4 +168,3 @@
 		display: none;
 	}
 }
-

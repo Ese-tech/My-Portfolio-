@@ -1,7 +1,7 @@
-import { FiGithub, FiGlobe } from "react-icons/fi";
+import SkillsData from "../../components/SkillsData";
 
-function Skills() {
-    return <>Skills</>;
-  }
-  
-  export default Skills;
+const Skills = () => {
+    return <SkillsData />;
+}
+
+export default Skills;

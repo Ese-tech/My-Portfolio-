@@ -1,5 +1,11 @@
+import ProjectsDetaList from "../../components/ProjecteDetaList";
+
 function MyProjects() {
-	return <>My Projects</>;
+	return (
+		<>
+			<ProjectsDetaList />
+		</>
+	);
 }
 
 export default MyProjects;
