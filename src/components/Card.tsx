@@ -95,10 +95,11 @@ function Card() {
 		updated_at,
 		language,
 		technologiesTags,
+		links,
 	} = repoData;
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 px-6 py-12">
+		<div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 px-6 py-12">
 			<motion.div
 				initial={{ opacity: 0, y: 30 }}
 				animate={{ opacity: 1, y: 0 }}
@@ -231,7 +232,7 @@ function Card() {
 								</a>
 							)}
 							<a
-								href={`https://ese-tech.github.io/${name}`}
+								href={links?.vercelUrl || `https://ese-tech.github.io/${name}`}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="flex-1 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white py-4 px-6 rounded-xl text-center font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center"

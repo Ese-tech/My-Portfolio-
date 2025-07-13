@@ -10,9 +10,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router";
 import { useSidebarContext } from "./useSidebarContext";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 function MobileView() {
 	const { isSidebarOpen, toggleSidebar } = useSidebarContext();
+	const { t } = useLanguage();
 
 	return (
 		<>
@@ -37,7 +39,7 @@ function MobileView() {
 					></div>
 
 					{/* Sidebar */}
-					<div className='fixed top-16 left-0 w-80 h-full bg-gradient-to-b from-slate-800 to-slate-900 shadow-2xl z-50 transform transition-transform duration-300'>
+					<div className='fixed top-16 left-0 w-80 h-full bg-gradient-to-b from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black shadow-2xl z-50 transform transition-transform duration-300'>
 						<nav className='flex flex-col p-6 space-y-4 mt-8'>
 							<NavLink
 								to='/'
@@ -49,7 +51,7 @@ function MobileView() {
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faHome} className='mr-4 text-xl' />
-								<span className='text-lg'>Home</span>
+								<span className='text-lg'>{t('home')}</span>
 							</NavLink>
 
 							<NavLink
@@ -62,7 +64,7 @@ function MobileView() {
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faUser} className='mr-4 text-xl' />
-								<span className='text-lg'>About Me</span>
+								<span className='text-lg'>{t('aboutMe')}</span>
 							</NavLink>
 
 							<NavLink
@@ -75,7 +77,7 @@ function MobileView() {
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faCogs} className='mr-4 text-xl' />
-								<span className='text-lg'>Skills</span>
+								<span className='text-lg'>{t('skills')}</span>
 							</NavLink>
 
 							<NavLink
@@ -88,7 +90,7 @@ function MobileView() {
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faProjectDiagram} className='mr-4 text-xl' />
-								<span className='text-lg'>My Projects</span>
+								<span className='text-lg'>{t('myProjects')}</span>
 							</NavLink>
 
 							<NavLink
@@ -101,7 +103,7 @@ function MobileView() {
 								onClick={toggleSidebar}
 							>
 								<FontAwesomeIcon icon={faEnvelope} className='mr-4 text-xl' />
-								<span className='text-lg'>Contact</span>
+								<span className='text-lg'>{t('contact')}</span>
 							</NavLink>
 						</nav>
 

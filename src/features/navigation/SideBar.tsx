@@ -7,12 +7,15 @@ import {
 	faEnvelope,
 	faCogs,
 } from "@fortawesome/free-solid-svg-icons";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 function SideBar() {
+	const { t } = useLanguage();
+
 	return (
-		<div className='hidden lg:block fixed left-0 top-0 h-full w-64 bg-gradient-to-b from-slate-800 to-slate-900 shadow-2xl z-50 text-white'>
+		<div className='hidden lg:block fixed left-0 top-0 h-full w-64 bg-gradient-to-b from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black shadow-2xl z-50 text-white'>
 			<div className='flex justify-center items-center p-8 border-b border-teal-400/30'>
-				<h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-gold-400 bg-clip-text text-transparent'>Menu</h2>
+				<h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-gold-400 bg-clip-text text-transparent'>{t('menu')}</h2>
 			</div>
 			<nav className='flex flex-col p-6 space-y-4 mt-8'>
 				<NavLink
@@ -25,7 +28,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faHome} className='mr-4 text-xl' />
-					<span className='text-lg'>Home</span>
+					<span className='text-lg'>{t('home')}</span>
 				</NavLink>
 
 				<NavLink
@@ -37,7 +40,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faUser} className='mr-4 text-xl' />
-					<span className='text-lg'>About Me</span>
+					<span className='text-lg'>{t('aboutMe')}</span>
 				</NavLink>
 
 				<NavLink
@@ -49,7 +52,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faCogs} className='mr-4 text-xl' />
-					<span className='text-lg'>Skills</span>
+					<span className='text-lg'>{t('skills')}</span>
 				</NavLink>
 
 				<NavLink
@@ -61,7 +64,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faProjectDiagram} className='mr-4 text-xl' />
-					<span className='text-lg'>My Projects</span>
+					<span className='text-lg'>{t('myProjects')}</span>
 				</NavLink>
 
 				<NavLink
@@ -73,16 +76,9 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faEnvelope} className='mr-4 text-xl' />
-					<span className='text-lg'>Contact</span>
+					<span className='text-lg'>{t('contact')}</span>
 				</NavLink>
 			</nav>
-
-			{/* Footer */}
-			<div className='absolute bottom-8 left-0 right-0 px-6'>
-				<div className='text-center text-gray-400 text-sm'>
-					<p>© 2025 Ese Osagie</p>
-				</div>
-			</div>
 		</div>
 	);
 }

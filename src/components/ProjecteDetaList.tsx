@@ -3,8 +3,10 @@ import { RepoData } from "../types/RepoTypes";
 import { reposdata } from "../assets/lib/Repsodata";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const ProjectsDetaList = () => {
+  const { t } = useLanguage();
   const [repos, setRepos] = useState<RepoData[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<null | string>(null);
@@ -46,7 +48,7 @@ const ProjectsDetaList = () => {
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="text-center">
-        <div className="text-2xl font-semibold bg-gradient-to-r from-slate-600 to-slate-800 bg-clip-text text-transparent mb-4">Loading projects...</div>
+        <div className="text-2xl font-semibold bg-gradient-to-r from-slate-600 to-slate-800 bg-clip-text text-transparent mb-4">{t('loadingProjects')}</div>
         <div className="flex justify-center space-x-2 mt-4">
           <div className="w-4 h-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full animate-bounce"></div>
           <div className="w-4 h-4 bg-gradient-to-r from-slate-400 to-slate-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
@@ -59,7 +61,7 @@ const ProjectsDetaList = () => {
   if (error) return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="text-center text-red-600 bg-white/90 backdrop-blur-sm border border-red-200 p-8 rounded-xl shadow-lg">
-        <h3 className="text-xl font-semibold mb-2">Error Loading Projects</h3>
+        <h3 className="text-xl font-semibold mb-2">{t('errorLoadingProjects')}</h3>
         <p>{error}</p>
       </div>
     </div>
@@ -76,7 +78,7 @@ const ProjectsDetaList = () => {
         <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-slate-200/50 p-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 bg-clip-text text-transparent mb-4">
-              My Projects
+              {t('myProjectsTitle')}
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-teal-500 to-blue-500 mx-auto mb-6"></div>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -88,7 +90,7 @@ const ProjectsDetaList = () => {
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
             <input
               type="text"
-              placeholder="Search projects..."
+              placeholder={t('searchProjects')}
               className="border border-slate-300 rounded-xl bg-white/80 text-slate-800 px-6 py-3 w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 placeholder-slate-500 shadow-sm"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -154,7 +156,7 @@ const ProjectsDetaList = () => {
                         to={`/my-projects/${repo.name}`}
                         className="flex-1 bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white text-center py-2 px-4 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105"
                       >
-                        View Details
+                        {t('viewDetails')}
                       </Link>
                       {repo.html_url && (
                         <a
@@ -163,7 +165,7 @@ const ProjectsDetaList = () => {
                           rel="noopener noreferrer"
                           className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white py-2 px-4 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105"
                         >
-                          GitHub
+                          {t('github')}
                         </a>
                       )}
                     </div>
@@ -177,8 +179,8 @@ const ProjectsDetaList = () => {
           {filteredRepos.length === 0 && (
             <div className="text-center py-12">
               <div className="text-6xl mb-4">🔍</div>
-              <p className="text-slate-600 text-xl font-semibold mb-2">No projects found</p>
-              <p className="text-slate-500 text-sm">Try adjusting your search or filter options.</p>
+              <p className="text-slate-600 text-xl font-semibold mb-2">{t('noProjectsFound')}</p>
+              <p className="text-slate-500 text-sm">{t('noProjectsFoundDescription')}</p>
             </div>
           )}
         </div>
