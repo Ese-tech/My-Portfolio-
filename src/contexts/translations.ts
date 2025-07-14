@@ -42,8 +42,8 @@ export const translations = {
       subtitle: "Full-Stack Developer passionate about creating innovative digital solutions",
       personal: {
         title: "Personal Info",
-        location: "Berlin, Germany",
-        age: "25 years old",
+        location: "Bielefeld, Germany",
+        age: "33 years old",
         education: "Digital Career Institute",
         focus: "Full-Stack Development"
       },
@@ -124,8 +124,8 @@ export const translations = {
       subtitle: "Full-Stack Entwickler mit Leidenschaft für innovative digitale Lösungen",
       personal: {
         title: "Persönliche Informationen",
-        location: "Berlin, Deutschland",
-        age: "25 Jahre alt",
+        location: "Bielefeld, Deutschland",
+        age: "33 Jahre alt",
         education: "Digital Career Institute",
         focus: "Full-Stack Entwicklung"
       },

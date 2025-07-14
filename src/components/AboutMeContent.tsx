@@ -152,14 +152,14 @@ function AboutMeContent() {
             
             {/* Tools */}
             <div className="text-center">
-              <h3 className="text-lg font-semibold text-gold-400 mb-3">
+              <h3 className="text-lg font-semibold text-amber-700 mb-3">
                 {t('about.skills.tools.title')}
               </h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {['Git', 'VS Code', 'Vite', 'Bun', 'Figma', 'Linux'].map((skill) => (
                   <span 
                     key={skill}
-                    className="px-3 py-1 bg-slate-600 dark:bg-slate-500 text-slate-200 rounded-full text-sm font-medium hover:bg-gold-600 dark:hover:bg-gold-600 transition-colors cursor-pointer"
+                    className="px-3 py-1 bg-slate-600 dark:bg-slate-500 text-slate-200 rounded-full text-sm font-medium hover:bg-yellow-800 dark:hover:bg-gold-600 transition-colors cursor-pointer"
                   >
                     {skill}
                   </span>
