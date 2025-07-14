@@ -15,7 +15,7 @@ function SideBar() {
 	return (
 		<div className='hidden lg:block fixed left-0 top-0 h-full w-64 bg-gradient-to-b from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black shadow-2xl z-50 text-white'>
 			<div className='flex justify-center items-center p-8 border-b border-teal-400/30'>
-				<h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg'>{t('menu')}</h2>
+				<h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-gold-400 bg-clip-text text-transparent'>{t('Menu')}</h2>
 			</div>
 			<nav className='flex flex-col p-6 space-y-4 mt-8'>
 				<NavLink
@@ -28,7 +28,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faHome} className='mr-4 text-xl' />
-					<span className='text-lg'>{t('home')}</span>
+					<span className='text-lg'>{t('Home')}</span>
 				</NavLink>
 
 				<NavLink
@@ -40,7 +40,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faUser} className='mr-4 text-xl' />
-					<span className='text-lg'>{t('aboutMe')}</span>
+					<span className='text-lg'>{t('AboutMe')}</span>
 				</NavLink>
 
 				<NavLink
@@ -52,7 +52,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faCogs} className='mr-4 text-xl' />
-					<span className='text-lg'>{t('skills')}</span>
+					<span className='text-lg'>{t('Skills')}</span>
 				</NavLink>
 
 				<NavLink
@@ -64,7 +64,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faProjectDiagram} className='mr-4 text-xl' />
-					<span className='text-lg'>{t('myProjects')}</span>
+					<span className='text-lg'>{t('MyProjects')}</span>
 				</NavLink>
 
 				<NavLink
@@ -76,7 +76,7 @@ function SideBar() {
 					}
 				>
 					<FontAwesomeIcon icon={faEnvelope} className='mr-4 text-xl' />
-					<span className='text-lg'>{t('contact')}</span>
+					<span className='text-lg'>{t('Contact')}</span>
 				</NavLink>
 			</nav>
 		</div>

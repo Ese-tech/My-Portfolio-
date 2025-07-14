@@ -6,11 +6,13 @@ import {
 	faProjectDiagram,
 	faEnvelope,
 	faCogs,
+	faGear,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router";
 import { useSidebarContext } from "./useSidebarContext";
 import { useLanguage } from "../../contexts/LanguageContext";
+import ROUTES_PATHS from "../routing/Routes_Paths";
 
 function MobileView() {
 	const { isSidebarOpen, toggleSidebar } = useSidebarContext();
@@ -104,6 +106,19 @@ function MobileView() {
 							>
 								<FontAwesomeIcon icon={faEnvelope} className='mr-4 text-xl' />
 								<span className='text-lg'>{t('contact')}</span>
+							</NavLink>
+
+							<NavLink
+								to={ROUTES_PATHS.SETTINGS}
+								className={({ isActive }) =>
+									isActive
+										? "text-white font-bold flex items-center py-3 px-4 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm shadow-lg border border-teal-400/30"
+										: "text-gray-200 hover:text-white hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 flex items-center py-3 px-4 rounded-lg transition-all duration-300"
+								}
+								onClick={toggleSidebar}
+							>
+								<FontAwesomeIcon icon={faGear} className='mr-4 text-xl' />
+								<span className='text-lg'>{t('settings')}</span>
 							</NavLink>
 						</nav>
 

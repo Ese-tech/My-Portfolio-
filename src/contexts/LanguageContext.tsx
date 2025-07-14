@@ -4,7 +4,7 @@ import { Language, translations } from './translations';
 interface LanguageContextType {
   language: Language;
   setLanguage: (language: Language) => void;
-  t: (key: keyof typeof translations.en) => string;
+  t: (key: string) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -31,8 +31,23 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('portfolio-language', newLanguage);
   };
 
-  const t = (key: keyof typeof translations.en): string => {
-    return translations[language][key] || translations.en[key] || key;
+  const t = (key: string): string => {
+    const keys = key.split('.');
+    let value: any = translations[language];
+    
+    for (const k of keys) {
+      value = value?.[k];
+    }
+    
+    // Fallback to English if translation not found
+    if (!value) {
+      value = translations.en;
+      for (const k of keys) {
+        value = value?.[k];
+      }
+    }
+    
+    return typeof value === 'string' ? value : key;
   };
 
   return (

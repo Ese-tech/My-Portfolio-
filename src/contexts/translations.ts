@@ -1,435 +1,280 @@
-export type Language = 'en' | 'de' | 'ja' | 'zh' | 'es' | 'fr';
+export type Language = 'en' | 'de' | 'fr' | 'es' | 'zh' | 'ja';
 
 export const translations = {
   en: {
-    // Navigation
-    home: "Home",
-    aboutMe: "About Me",
-    skills: "Skills",
-    myProjects: "My Projects",
-    contact: "Contact",
-    menu: "Menu",
-
-    // Home Page
-    webDeveloperPortfolio: "WEB DEVELOPER PORTFOLIO",
-    fullStackDeveloper: "Full Stack Developer",
-    welcomeMessage: "Welcome to my digital showcase! I'm a passionate developer specializing in React, TypeScript, and Node.js.",
-    exploreWork: "Explore My Work",
-    getInTouch: "Get In Touch",
-
-    // About Me
-    aboutMeTitle: "About Me",
-    aboutMeDescription: "Discover the technologies and skills that drive my passion for web development.",
-
-    // Skills
-    skillsTitle: "Skills",
-    skillsDescription: "Discover the technologies and skills that drive my passion for web development.",
-    webDevelopment: "Web Development",
-    frontend: "Frontend",
-    backend: "Backend",
-    tools: "Tools",
-    advanced: "Advanced",
-    intermediate: "Intermediate",
-    beginner: "Beginner",
-
-    // Projects
-    myProjectsTitle: "My Projects",
-    projectsDescription: "Discover the technologies and skills that drive my passion for web development.",
-    searchProjects: "Search projects...",
-    allLanguages: "All",
-    viewDetails: "View Details",
-    github: "GitHub",
-    loadingProjects: "Loading projects...",
-    errorLoadingProjects: "Error Loading Projects",
-    noProjectsFound: "No projects found",
-    noProjectsFoundDescription: "Try adjusting your search or filter options.",
-
-    // Project Card
-    backToProjects: "Back to Projects",
-    repositoryNotFound: "Repository Not Found",
-    repositoryNotFoundDescription: "The project you're looking for doesn't exist.",
-    loadingProjectDetails: "Loading project details...",
-    techStack: "Tech Stack",
-    statistics: "Statistics",
-    timeline: "Timeline",
-    topics: "Topics",
-    stars: "Stars",
-    language: "Language",
-    notSpecified: "Not specified",
-    created: "Created",
-    updated: "Updated",
-    viewSourceCode: "View Source Code",
-    viewLiveDemo: "View Live Demo",
-    noDescriptionAvailable: "No description available",
-    noNameAvailable: "No name available",
-
-    // Contact
-    contactTitle: "Contact",
-    contactDescription: "Let's connect and discuss opportunities.",
-
-    // Common
-    error: "Error",
-    loading: "Loading...",
-    more: "more",
+    navigation: {
+      home: 'Home',
+      about: 'About Me',
+      skills: 'Skills',
+      projects: 'My Projects',
+      contact: 'Contact',
+      settings: 'Settings'
+    },
+    home: {
+      welcome: 'Welcome to My Portfolio',
+      intro: 'I am a passionate developer',
+      subtitle: 'Full Stack Developer & UI/UX Designer',
+      description: 'I create amazing digital experiences'
+    },
+    about: {
+      title: 'About Me',
+      description: 'Learn more about my journey and experience'
+    },
+    skills: {
+      title: 'My Skills',
+      description: 'Technologies and tools I work with'
+    },
+    projects: {
+      title: 'My Projects',
+      description: 'Explore my latest work and achievements'
+    },
+    contact: {
+      title: 'Get In Touch',
+      description: 'Let\'s discuss your next project'
+    },
+    settings: {
+      title: 'Settings',
+      description: 'Customize your experience with theme and language preferences',
+      theme: {
+        title: 'Theme Preferences',
+        description: 'Choose your preferred color scheme',
+        light: 'Light Mode',
+        dark: 'Dark Mode'
+      },
+      language: {
+        title: 'Language Settings',
+        description: 'Select your preferred language'
+      }
+    }
   },
-
   de: {
-    // Navigation
-    home: "Startseite",
-    aboutMe: "Über mich",
-    skills: "Fähigkeiten",
-    myProjects: "Meine Projekte",
-    contact: "Kontakt",
-    menu: "Menü",
-
-    // Home Page
-    webDeveloperPortfolio: "WEB-ENTWICKLER PORTFOLIO",
-    fullStackDeveloper: "Full Stack Entwickler",
-    welcomeMessage: "Willkommen zu meiner digitalen Präsentation! Ich bin ein leidenschaftlicher Entwickler, spezialisiert auf React, TypeScript und Node.js.",
-    exploreWork: "Meine Arbeit erkunden",
-    getInTouch: "Kontakt aufnehmen",
-
-    // About Me
-    aboutMeTitle: "Über mich",
-    aboutMeDescription: "Entdecke die Technologien und Fähigkeiten, die meine Leidenschaft für Webentwicklung antreiben.",
-
-    // Skills
-    skillsTitle: "Fähigkeiten",
-    skillsDescription: "Entdecke die Technologien und Fähigkeiten, die meine Leidenschaft für Webentwicklung antreiben.",
-    webDevelopment: "Webentwicklung",
-    frontend: "Frontend",
-    backend: "Backend",
-    tools: "Werkzeuge",
-    advanced: "Fortgeschritten",
-    intermediate: "Mittelstufe",
-    beginner: "Anfänger",
-
-    // Projects
-    myProjectsTitle: "Meine Projekte",
-    projectsDescription: "Entdecke die Technologien und Fähigkeiten, die meine Leidenschaft für Webentwicklung antreiben.",
-    searchProjects: "Projekte suchen...",
-    allLanguages: "Alle",
-    viewDetails: "Details anzeigen",
-    github: "GitHub",
-    loadingProjects: "Projekte werden geladen...",
-    errorLoadingProjects: "Fehler beim Laden der Projekte",
-    noProjectsFound: "Keine Projekte gefunden",
-    noProjectsFoundDescription: "Versuche, deine Such- oder Filteroptionen anzupassen.",
-
-    // Project Card
-    backToProjects: "Zurück zu Projekten",
-    repositoryNotFound: "Repository nicht gefunden",
-    repositoryNotFoundDescription: "Das gesuchte Projekt existiert nicht.",
-    loadingProjectDetails: "Projektdetails werden geladen...",
-    techStack: "Tech Stack",
-    statistics: "Statistiken",
-    timeline: "Zeitlinie",
-    topics: "Themen",
-    stars: "Sterne",
-    language: "Sprache",
-    notSpecified: "Nicht angegeben",
-    created: "Erstellt",
-    updated: "Aktualisiert",
-    viewSourceCode: "Quellcode anzeigen",
-    viewLiveDemo: "Live Demo anzeigen",
-    noDescriptionAvailable: "Keine Beschreibung verfügbar",
-    noNameAvailable: "Kein Name verfügbar",
-
-    // Contact
-    contactTitle: "Kontakt",
-    contactDescription: "Lass uns in Kontakt treten und über Möglichkeiten sprechen.",
-
-    // Common
-    error: "Fehler",
-    loading: "Wird geladen...",
-    more: "mehr",
+    navigation: {
+      home: 'Startseite',
+      about: 'Über mich',
+      skills: 'Fähigkeiten',
+      projects: 'Meine Projekte',
+      contact: 'Kontakt',
+      settings: 'Einstellungen'
+    },
+    home: {
+      welcome: 'Willkommen zu meinem Portfolio',
+      intro: 'Ich bin ein leidenschaftlicher Entwickler',
+      subtitle: 'Full Stack Entwickler & UI/UX Designer',
+      description: 'Ich erstelle erstaunliche digitale Erfahrungen'
+    },
+    about: {
+      title: 'Über mich',
+      description: 'Erfahren Sie mehr über meinen Werdegang und meine Erfahrung'
+    },
+    skills: {
+      title: 'Meine Fähigkeiten',
+      description: 'Technologien und Tools, mit denen ich arbeite'
+    },
+    projects: {
+      title: 'Meine Projekte',
+      description: 'Entdecken Sie meine neuesten Arbeiten und Erfolge'
+    },
+    contact: {
+      title: 'Kontakt aufnehmen',
+      description: 'Lassen Sie uns über Ihr nächstes Projekt sprechen'
+    },
+    settings: {
+      title: 'Einstellungen',
+      description: 'Passen Sie Ihre Erfahrung mit Theme- und Spracheinstellungen an',
+      theme: {
+        title: 'Theme-Einstellungen',
+        description: 'Wählen Sie Ihr bevorzugtes Farbschema',
+        light: 'Heller Modus',
+        dark: 'Dunkler Modus'
+      },
+      language: {
+        title: 'Spracheinstellungen',
+        description: 'Wählen Sie Ihre bevorzugte Sprache'
+      }
+    }
   },
-
-  ja: {
-    // Navigation
-    home: "ホーム",
-    aboutMe: "私について",
-    skills: "スキル",
-    myProjects: "プロジェクト",
-    contact: "連絡先",
-    menu: "メニュー",
-
-    // Home Page
-    webDeveloperPortfolio: "ウェブ開発者ポートフォリオ",
-    fullStackDeveloper: "フルスタック開発者",
-    welcomeMessage: "私のデジタルショーケースへようこそ！React、TypeScript、Node.jsを専門とする情熱的な開発者です。",
-    exploreWork: "作品を見る",
-    getInTouch: "お問い合わせ",
-
-    // About Me
-    aboutMeTitle: "私について",
-    aboutMeDescription: "ウェブ開発への情熱を駆り立てる技術とスキルをご覧ください。",
-
-    // Skills
-    skillsTitle: "スキル",
-    skillsDescription: "ウェブ開発への情熱を駆り立てる技術とスキルをご覧ください。",
-    webDevelopment: "ウェブ開発",
-    frontend: "フロントエンド",
-    backend: "バックエンド",
-    tools: "ツール",
-    advanced: "上級",
-    intermediate: "中級",
-    beginner: "初級",
-
-    // Projects
-    myProjectsTitle: "プロジェクト",
-    projectsDescription: "ウェブ開発への情熱を駆り立てる技術とスキルをご覧ください。",
-    searchProjects: "プロジェクトを検索...",
-    allLanguages: "すべて",
-    viewDetails: "詳細を見る",
-    github: "GitHub",
-    loadingProjects: "プロジェクトを読み込み中...",
-    errorLoadingProjects: "プロジェクトの読み込みエラー",
-    noProjectsFound: "プロジェクトが見つかりません",
-    noProjectsFoundDescription: "検索またはフィルターオプションを調整してみてください。",
-
-    // Project Card
-    backToProjects: "プロジェクトに戻る",
-    repositoryNotFound: "リポジトリが見つかりません",
-    repositoryNotFoundDescription: "お探しのプロジェクトは存在しません。",
-    loadingProjectDetails: "プロジェクトの詳細を読み込み中...",
-    techStack: "技術スタック",
-    statistics: "統計",
-    timeline: "タイムライン",
-    topics: "トピック",
-    stars: "スター",
-    language: "言語",
-    notSpecified: "未指定",
-    created: "作成日",
-    updated: "更新日",
-    viewSourceCode: "ソースコードを見る",
-    viewLiveDemo: "ライブデモを見る",
-    noDescriptionAvailable: "説明がありません",
-    noNameAvailable: "名前がありません",
-
-    // Contact
-    contactTitle: "連絡先",
-    contactDescription: "つながって、機会について話し合いましょう。",
-
-    // Common
-    error: "エラー",
-    loading: "読み込み中...",
-    more: "もっと",
-  },
-
-  zh: {
-    // Navigation
-    home: "首页",
-    aboutMe: "关于我",
-    skills: "技能",
-    myProjects: "我的项目",
-    contact: "联系我",
-    menu: "菜单",
-
-    // Home Page
-    webDeveloperPortfolio: "网页开发者作品集",
-    fullStackDeveloper: "全栈开发者",
-    welcomeMessage: "欢迎来到我的数字展示！我是一名专注于React、TypeScript和Node.js的热情开发者。",
-    exploreWork: "探索我的作品",
-    getInTouch: "联系我",
-
-    // About Me
-    aboutMeTitle: "关于我",
-    aboutMeDescription: "发现驱动我对网页开发热情的技术和技能。",
-
-    // Skills
-    skillsTitle: "技能",
-    skillsDescription: "发现驱动我对网页开发热情的技术和技能。",
-    webDevelopment: "网页开发",
-    frontend: "前端",
-    backend: "后端",
-    tools: "工具",
-    advanced: "高级",
-    intermediate: "中级",
-    beginner: "初级",
-
-    // Projects
-    myProjectsTitle: "我的项目",
-    projectsDescription: "发现驱动我对网页开发热情的技术和技能。",
-    searchProjects: "搜索项目...",
-    allLanguages: "全部",
-    viewDetails: "查看详情",
-    github: "GitHub",
-    loadingProjects: "正在加载项目...",
-    errorLoadingProjects: "加载项目时出错",
-    noProjectsFound: "未找到项目",
-    noProjectsFoundDescription: "尝试调整搜索或筛选选项。",
-
-    // Project Card
-    backToProjects: "返回项目",
-    repositoryNotFound: "未找到仓库",
-    repositoryNotFoundDescription: "您要查找的项目不存在。",
-    loadingProjectDetails: "正在加载项目详情...",
-    techStack: "技术栈",
-    statistics: "统计",
-    timeline: "时间线",
-    topics: "主题",
-    stars: "星标",
-    language: "语言",
-    notSpecified: "未指定",
-    created: "创建时间",
-    updated: "更新时间",
-    viewSourceCode: "查看源代码",
-    viewLiveDemo: "查看实时演示",
-    noDescriptionAvailable: "暂无描述",
-    noNameAvailable: "暂无名称",
-
-    // Contact
-    contactTitle: "联系我",
-    contactDescription: "让我们联系并讨论机会。",
-
-    // Common
-    error: "错误",
-    loading: "加载中...",
-    more: "更多",
-  },
-
-  es: {
-    // Navigation
-    home: "Inicio",
-    aboutMe: "Acerca de mí",
-    skills: "Habilidades",
-    myProjects: "Mis Proyectos",
-    contact: "Contacto",
-    menu: "Menú",
-
-    // Home Page
-    webDeveloperPortfolio: "PORTAFOLIO DE DESARROLLADOR WEB",
-    fullStackDeveloper: "Desarrollador Full Stack",
-    welcomeMessage: "¡Bienvenido a mi escaparate digital! Soy un desarrollador apasionado especializado en React, TypeScript y Node.js.",
-    exploreWork: "Explorar mi trabajo",
-    getInTouch: "Ponerse en contacto",
-
-    // About Me
-    aboutMeTitle: "Acerca de mí",
-    aboutMeDescription: "Descubre las tecnologías y habilidades que impulsan mi pasión por el desarrollo web.",
-
-    // Skills
-    skillsTitle: "Habilidades",
-    skillsDescription: "Descubre las tecnologías y habilidades que impulsan mi pasión por el desarrollo web.",
-    webDevelopment: "Desarrollo Web",
-    frontend: "Frontend",
-    backend: "Backend",
-    tools: "Herramientas",
-    advanced: "Avanzado",
-    intermediate: "Intermedio",
-    beginner: "Principiante",
-
-    // Projects
-    myProjectsTitle: "Mis Proyectos",
-    projectsDescription: "Descubre las tecnologías y habilidades que impulsan mi pasión por el desarrollo web.",
-    searchProjects: "Buscar proyectos...",
-    allLanguages: "Todos",
-    viewDetails: "Ver Detalles",
-    github: "GitHub",
-    loadingProjects: "Cargando proyectos...",
-    errorLoadingProjects: "Error al cargar proyectos",
-    noProjectsFound: "No se encontraron proyectos",
-    noProjectsFoundDescription: "Intenta ajustar tus opciones de búsqueda o filtro.",
-
-    // Project Card
-    backToProjects: "Volver a Proyectos",
-    repositoryNotFound: "Repositorio no encontrado",
-    repositoryNotFoundDescription: "El proyecto que buscas no existe.",
-    loadingProjectDetails: "Cargando detalles del proyecto...",
-    techStack: "Stack Tecnológico",
-    statistics: "Estadísticas",
-    timeline: "Cronología",
-    topics: "Temas",
-    stars: "Estrellas",
-    language: "Idioma",
-    notSpecified: "No especificado",
-    created: "Creado",
-    updated: "Actualizado",
-    viewSourceCode: "Ver Código Fuente",
-    viewLiveDemo: "Ver Demo en Vivo",
-    noDescriptionAvailable: "No hay descripción disponible",
-    noNameAvailable: "No hay nombre disponible",
-
-    // Contact
-    contactTitle: "Contacto",
-    contactDescription: "Conectemos y discutamos oportunidades.",
-
-    // Common
-    error: "Error",
-    loading: "Cargando...",
-    more: "más",
-  },
-
   fr: {
-    // Navigation
-    home: "Accueil",
-    aboutMe: "À propos",
-    skills: "Compétences",
-    myProjects: "Mes Projets",
-    contact: "Contact",
-    menu: "Menu",
-
-    // Home Page
-    webDeveloperPortfolio: "PORTFOLIO DE DÉVELOPPEUR WEB",
-    fullStackDeveloper: "Développeur Full Stack",
-    welcomeMessage: "Bienvenue dans ma vitrine numérique ! Je suis un développeur passionné spécialisé en React, TypeScript et Node.js.",
-    exploreWork: "Explorer mon travail",
-    getInTouch: "Entrer en contact",
-
-    // About Me
-    aboutMeTitle: "À propos",
-    aboutMeDescription: "Découvrez les technologies et compétences qui alimentent ma passion pour le développement web.",
-
-    // Skills
-    skillsTitle: "Compétences",
-    skillsDescription: "Découvrez les technologies et compétences qui alimentent ma passion pour le développement web.",
-    webDevelopment: "Développement Web",
-    frontend: "Frontend",
-    backend: "Backend",
-    tools: "Outils",
-    advanced: "Avancé",
-    intermediate: "Intermédiaire",
-    beginner: "Débutant",
-
-    // Projects
-    myProjectsTitle: "Mes Projets",
-    projectsDescription: "Découvrez les technologies et compétences qui alimentent ma passion pour le développement web.",
-    searchProjects: "Rechercher des projets...",
-    allLanguages: "Tous",
-    viewDetails: "Voir Détails",
-    github: "GitHub",
-    loadingProjects: "Chargement des projets...",
-    errorLoadingProjects: "Erreur lors du chargement des projets",
-    noProjectsFound: "Aucun projet trouvé",
-    noProjectsFoundDescription: "Essayez d'ajuster vos options de recherche ou de filtre.",
-
-    // Project Card
-    backToProjects: "Retour aux Projets",
-    repositoryNotFound: "Référentiel non trouvé",
-    repositoryNotFoundDescription: "Le projet que vous cherchez n'existe pas.",
-    loadingProjectDetails: "Chargement des détails du projet...",
-    techStack: "Stack Technique",
-    statistics: "Statistiques",
-    timeline: "Chronologie",
-    topics: "Sujets",
-    stars: "Étoiles",
-    language: "Langue",
-    notSpecified: "Non spécifié",
-    created: "Créé",
-    updated: "Mis à jour",
-    viewSourceCode: "Voir le Code Source",
-    viewLiveDemo: "Voir la Démo en Direct",
-    noDescriptionAvailable: "Aucune description disponible",
-    noNameAvailable: "Aucun nom disponible",
-
-    // Contact
-    contactTitle: "Contact",
-    contactDescription: "Connectons-nous et discutons des opportunités.",
-
-    // Common
-    error: "Erreur",
-    loading: "Chargement...",
-    more: "plus",
+    navigation: {
+      home: 'Accueil',
+      about: 'À propos',
+      skills: 'Compétences',
+      projects: 'Mes Projets',
+      contact: 'Contact',
+      settings: 'Paramètres'
+    },
+    home: {
+      welcome: 'Bienvenue dans mon portfolio',
+      intro: 'Je suis un développeur passionné',
+      subtitle: 'Développeur Full Stack & Designer UI/UX',
+      description: 'Je crée des expériences numériques incroyables'
+    },
+    about: {
+      title: 'À propos de moi',
+      description: 'En savoir plus sur mon parcours et mon expérience'
+    },
+    skills: {
+      title: 'Mes Compétences',
+      description: 'Technologies et outils avec lesquels je travaille'
+    },
+    projects: {
+      title: 'Mes Projets',
+      description: 'Explorez mes derniers travaux et réalisations'
+    },
+    contact: {
+      title: 'Contactez-moi',
+      description: 'Discutons de votre prochain projet'
+    },
+    settings: {
+      title: 'Paramètres',
+      description: 'Personnalisez votre expérience avec les préférences de thème et de langue',
+      theme: {
+        title: 'Préférences de thème',
+        description: 'Choisissez votre schéma de couleurs préféré',
+        light: 'Mode clair',
+        dark: 'Mode sombre'
+      },
+      language: {
+        title: 'Paramètres de langue',
+        description: 'Sélectionnez votre langue préférée'
+      }
+    }
+  },
+  es: {
+    navigation: {
+      home: 'Inicio',
+      about: 'Acerca de mí',
+      skills: 'Habilidades',
+      projects: 'Mis Proyectos',
+      contact: 'Contacto',
+      settings: 'Configuración'
+    },
+    home: {
+      welcome: 'Bienvenido a mi portafolio',
+      intro: 'Soy un desarrollador apasionado',
+      subtitle: 'Desarrollador Full Stack & Diseñador UI/UX',
+      description: 'Creo experiencias digitales increíbles'
+    },
+    about: {
+      title: 'Acerca de mí',
+      description: 'Conoce más sobre mi trayectoria y experiencia'
+    },
+    skills: {
+      title: 'Mis Habilidades',
+      description: 'Tecnologías y herramientas con las que trabajo'
+    },
+    projects: {
+      title: 'Mis Proyectos',
+      description: 'Explora mis últimos trabajos y logros'
+    },
+    contact: {
+      title: 'Ponte en contacto',
+      description: 'Hablemos sobre tu próximo proyecto'
+    },
+    settings: {
+      title: 'Configuración',
+      description: 'Personaliza tu experiencia con preferencias de tema e idioma',
+      theme: {
+        title: 'Preferencias de tema',
+        description: 'Elige tu esquema de colores preferido',
+        light: 'Modo claro',
+        dark: 'Modo oscuro'
+      },
+      language: {
+        title: 'Configuración de idioma',
+        description: 'Selecciona tu idioma preferido'
+      }
+    }
+  },
+  zh: {
+    navigation: {
+      home: '首页',
+      about: '关于我',
+      skills: '技能',
+      projects: '我的项目',
+      contact: '联系方式',
+      settings: '设置'
+    },
+    home: {
+      welcome: '欢迎来到我的作品集',
+      intro: '我是一名充满激情的开发者',
+      subtitle: '全栈开发者 & UI/UX设计师',
+      description: '我创造令人惊叹的数字体验'
+    },
+    about: {
+      title: '关于我',
+      description: '了解更多关于我的经历和经验'
+    },
+    skills: {
+      title: '我的技能',
+      description: '我使用的技术和工具'
+    },
+    projects: {
+      title: '我的项目',
+      description: '探索我的最新作品和成就'
+    },
+    contact: {
+      title: '联系我',
+      description: '让我们讨论您的下一个项目'
+    },
+    settings: {
+      title: '设置',
+      description: '通过主题和语言偏好设置定制您的体验',
+      theme: {
+        title: '主题偏好',
+        description: '选择您偏好的配色方案',
+        light: '浅色模式',
+        dark: '深色模式'
+      },
+      language: {
+        title: '语言设置',
+        description: '选择您偏好的语言'
+      }
+    }
+  },
+  ja: {
+    navigation: {
+      home: 'ホーム',
+      about: '私について',
+      skills: 'スキル',
+      projects: '私のプロジェクト',
+      contact: 'お問い合わせ',
+      settings: '設定'
+    },
+    home: {
+      welcome: '私のポートフォリオへようこそ',
+      intro: '私は情熱的な開発者です',
+      subtitle: 'フルスタック開発者 & UI/UXデザイナー',
+      description: '素晴らしいデジタル体験を創造します'
+    },
+    about: {
+      title: '私について',
+      description: '私の経歴と経験についてもっと知る'
+    },
+    skills: {
+      title: '私のスキル',
+      description: '私が扱う技術とツール'
+    },
+    projects: {
+      title: '私のプロジェクト',
+      description: '私の最新の作品と成果を探る'
+    },
+    contact: {
+      title: 'お問い合わせ',
+      description: 'あなたの次のプロジェクトについて話しましょう'
+    },
+    settings: {
+      title: '設定',
+      description: 'テーマと言語の設定でエクスペリエンスをカスタマイズ',
+      theme: {
+        title: 'テーマ設定',
+        description: 'お好みの配色を選択してください',
+        light: 'ライトモード',
+        dark: 'ダークモード'
+      },
+      language: {
+        title: '言語設定',
+        description: 'お好みの言語を選択してください'
+      }
+    }
   }
 } as const;

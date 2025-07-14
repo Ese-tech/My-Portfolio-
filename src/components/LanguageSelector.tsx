@@ -5,12 +5,12 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { Language } from '../contexts/translations';
 
 const languageOptions = [
-  { code: 'en' as Language, name: 'English', flag: '🇺🇸' },
-  { code: 'fr' as Language, name: 'French', flag: '🇫🇷' },
-  { code: 'de' as Language, name: 'German', flag: '🇩🇪' },
-  { code: 'ja' as Language, name: 'Japanese', flag: '🇯🇵' },
-  { code: 'zh' as Language, name: 'Chinese', flag: '🇨🇳' },
-  { code: 'es' as Language, name: 'Spanish', flag: '🇪🇸' },
+  { code: 'en' as Language, name: 'En', flag: '🇺🇸' },
+  { code: 'fr' as Language, name: 'Fr', flag: '🇫🇷' },
+  { code: 'de' as Language, name: 'De', flag: '🇩🇪' },
+  { code: 'ja' as Language, name: 'Ja', flag: '🇯🇵' },
+  { code: 'zh' as Language, name: 'Zh', flag: '🇨🇳' },
+  { code: 'es' as Language, name: 'Es', flag: '🇪🇸' },
 ];
 
 export function LanguageSelector() {

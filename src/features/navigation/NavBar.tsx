@@ -6,8 +6,10 @@ import {
 	faProjectDiagram,
 	faEnvelope,
 	faCogs,
+	faGear,
 } from "@fortawesome/free-solid-svg-icons";
 import MobileView from "./MobileView";
+import ROUTES_PATHS from "../routing/Routes_Paths";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 export function NavBar() {
@@ -82,6 +84,18 @@ export function NavBar() {
 						>
 							<FontAwesomeIcon icon={faEnvelope} className='mr-2 text-lg' />
 							<span className='hidden xl:inline'>{t('contact')}</span>
+						</NavLink>
+
+						<NavLink
+							to={ROUTES_PATHS.SETTINGS}
+							className={({ isActive }) =>
+								isActive
+									? "flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
+									: "flex items-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+							}
+						>
+							<FontAwesomeIcon icon={faGear} className='mr-2 text-lg' />
+							<span className='hidden xl:inline'>{t('settings')}</span>
 						</NavLink>
 					</div>
 				</nav>

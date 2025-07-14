@@ -5,6 +5,7 @@ const ROUTES_PATHS = {
     CONTACT: '/contact',
     SKILLS: '/skills',
     CARD: '/my-projects/:card',
+    SETTINGS: '/settings',
 } as const ;
 
 export default ROUTES_PATHS;
