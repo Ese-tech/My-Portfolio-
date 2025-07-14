@@ -1,6 +1,6 @@
 export type Language = 'en' | 'de' | 'fr' | 'es' | 'zh' | 'ja';
 
-export const translations: Record<Language, any> = {
+const translations = {
   en: {
     // Navigation
     navigation: {
@@ -38,140 +38,51 @@ export const translations: Record<Language, any> = {
 
     // About Me Page
     about: {
-      title: 'About Me',
-      subtitle: 'Get to know me better',
-      introduction: 'Hello! I\'m Ese Osagie, a passionate Full Stack Developer based in Germany.',
-      description: 'I specialize in creating modern, responsive web applications using cutting-edge technologies. My journey in web development started with a curiosity about how websites work, and it has evolved into a passion for building exceptional digital experiences.',
+      title: "About Me",
+      subtitle: "Full-Stack Developer passionate about creating innovative digital solutions",
+      personal: {
+        title: "Personal Info",
+        location: "Berlin, Germany",
+        age: "25 years old",
+        education: "Digital Career Institute",
+        focus: "Full-Stack Development"
+      },
       journey: {
-        title: 'My Journey',
-        content: 'Currently studying at DCI Digital Career Institute, I\'m constantly learning and improving my skills in web development. I believe in writing clean, maintainable code and creating user-friendly interfaces.'
+        title: "My Journey",
+        description1: "My coding journey began with curiosity and has evolved into a passion for creating meaningful digital experiences. I love solving complex problems and turning ideas into reality through code.",
+        description2: "Currently focusing on modern web technologies and always eager to learn new frameworks and tools that can help me build better applications."
       },
-      passions: {
-        title: 'What I Love',
-        development: 'Full Stack Development',
-        learning: 'Continuous Learning',
-        problemSolving: 'Problem Solving',
-        teamwork: 'Team Collaboration'
+      skills: {
+        title: "Technical Skills",
+        frontend: {
+          title: "Frontend"
+        },
+        backend: {
+          title: "Backend"
+        },
+        tools: {
+          title: "Tools & Others"
+        }
       },
-      approach: {
-        title: 'My Approach',
-        content: 'I believe in combining technical excellence with creative problem-solving. Every project is an opportunity to learn something new and push the boundaries of what\'s possible.'
+      values: {
+        title: "My Values",
+        value1: "Clean, maintainable code that others can understand and build upon",
+        value2: "Continuous learning and staying updated with industry best practices",
+        value3: "Collaborative teamwork and effective communication"
+      },
+      interests: {
+        title: "Interests",
+        interest1: "Exploring new web technologies and frameworks",
+        interest2: "Open source contribution and community involvement",
+        interest3: "UI/UX design and user experience optimization"
       },
       cta: {
-        title: 'Let\'s Connect',
-        description: 'I\'m always open to discussing new opportunities and interesting projects.',
-        button: 'Get In Touch'
+        title: "Let's Connect!",
+        description: "I'm always interested in discussing new opportunities, projects, or just chatting about technology.",
+        button: "Download My CV"
       }
-    },
-
-    // Skills Page
-    skills: {
-      title: 'My Skills',
-      subtitle: 'Technologies and tools I work with',
-      categories: {
-        technical: 'Technical Skills',
-        soft: 'Soft Skills',
-        tools: 'Tools & Technologies'
-      },
-      softSkills: {
-        problemSolving: 'Problem Solving',
-        teamwork: 'Teamwork',
-        communication: 'Communication',
-        creativity: 'Creativity',
-        adaptability: 'Adaptability',
-        leadership: 'Leadership'
-      }
-    },
-
-    // Projects Page
-    projects: {
-      title: 'My Projects',
-      subtitle: 'A showcase of my recent work',
-      search: 'Search projects...',
-      filter: 'Filter by language',
-      all: 'All',
-      loading: 'Loading projects...',
-      error: 'Error loading projects',
-      noResults: 'No projects found',
-      viewCode: 'View Code',
-      liveDemo: 'Live Demo',
-      technologies: 'Technologies',
-      createdAt: 'Created',
-      updatedAt: 'Last Updated'
-    },
-
-    // Contact Page
-    contact: {
-      title: 'Get In Touch',
-      subtitle: 'Let\'s discuss your next project',
-      form: {
-        name: 'Your Name',
-        email: 'Your Email',
-        subject: 'Subject',
-        message: 'Your Message',
-        send: 'Send Message',
-        sending: 'Sending...',
-        success: 'Message sent successfully!',
-        error: 'Error sending message. Please try again.'
-      },
-      info: {
-        title: 'Contact Information',
-        email: 'Email',
-        location: 'Location',
-        availability: 'Available for freelance work'
-      },
-      social: {
-        title: 'Follow Me',
-        github: 'GitHub',
-        linkedin: 'LinkedIn',
-        twitter: 'Twitter'
-      }
-    },
-
-    // Settings Page
-    settings: {
-      title: 'Settings',
-      subtitle: 'Customize your experience',
-      appearance: {
-        title: 'Appearance',
-        theme: 'Theme',
-        light: 'Light',
-        dark: 'Dark',
-        system: 'System'
-      },
-      language: {
-        title: 'Language',
-        select: 'Select Language',
-        current: 'Current Language'
-      },
-      accessibility: {
-        title: 'Accessibility',
-        reducedMotion: 'Reduce Motion',
-        highContrast: 'High Contrast'
-      },
-      about: {
-        title: 'About This Site',
-        version: 'Version',
-        built: 'Built with React, TypeScript, and Tailwind CSS',
-        updated: 'Last Updated'
-      }
-    },
-
-    // Common
-    common: {
-      loading: 'Loading...',
-      error: 'Something went wrong',
-      retry: 'Try Again',
-      close: 'Close',
-      save: 'Save',
-      cancel: 'Cancel',
-      back: 'Back',
-      next: 'Next',
-      previous: 'Previous',
-      menu: 'Menu'
     }
   },
-
   de: {
     // Navigation
     navigation: {
@@ -209,140 +120,51 @@ export const translations: Record<Language, any> = {
 
     // About Me Page
     about: {
-      title: 'Über mich',
-      subtitle: 'Lerne mich besser kennen',
-      introduction: 'Hallo! Ich bin Ese Osagie, ein leidenschaftlicher Full Stack Entwickler aus Deutschland.',
-      description: 'Ich spezialisiere mich auf die Erstellung moderner, responsiver Webanwendungen mit modernsten Technologien. Meine Reise in der Webentwicklung begann mit der Neugier darauf, wie Websites funktionieren, und hat sich zu einer Leidenschaft für außergewöhnliche digitale Erlebnisse entwickelt.',
+      title: "Über Mich",
+      subtitle: "Full-Stack Entwickler mit Leidenschaft für innovative digitale Lösungen",
+      personal: {
+        title: "Persönliche Informationen",
+        location: "Berlin, Deutschland",
+        age: "25 Jahre alt",
+        education: "Digital Career Institute",
+        focus: "Full-Stack Entwicklung"
+      },
       journey: {
-        title: 'Meine Reise',
-        content: 'Derzeit studiere ich am DCI Digital Career Institute und lerne ständig dazu und verbessere meine Fähigkeiten in der Webentwicklung. Ich glaube an sauberen, wartbaren Code und benutzerfreundliche Oberflächen.'
+        title: "Meine Reise",
+        description1: "Meine Programmierreise begann mit Neugier und hat sich zu einer Leidenschaft für die Erstellung bedeutsamer digitaler Erfahrungen entwickelt. Ich liebe es, komplexe Probleme zu lösen und Ideen durch Code in die Realität umzusetzen.",
+        description2: "Derzeit konzentriere ich mich auf moderne Webtechnologien und bin immer begierig darauf, neue Frameworks und Tools zu lernen, die mir helfen können, bessere Anwendungen zu erstellen."
       },
-      passions: {
-        title: 'Was ich liebe',
-        development: 'Full Stack Entwicklung',
-        learning: 'Kontinuierliches Lernen',
-        problemSolving: 'Problemlösung',
-        teamwork: 'Teamarbeit'
+      skills: {
+        title: "Technische Fähigkeiten",
+        frontend: {
+          title: "Frontend"
+        },
+        backend: {
+          title: "Backend"
+        },
+        tools: {
+          title: "Tools & Andere"
+        }
       },
-      approach: {
-        title: 'Mein Ansatz',
-        content: 'Ich glaube an die Kombination von technischer Exzellenz mit kreativer Problemlösung. Jedes Projekt ist eine Gelegenheit, etwas Neues zu lernen und die Grenzen des Möglichen zu erweitern.'
+      values: {
+        title: "Meine Werte",
+        value1: "Sauberer, wartbarer Code, den andere verstehen und erweitern können",
+        value2: "Kontinuierliches Lernen und Aktualisierung mit Industriestandards",
+        value3: "Kollaborative Teamarbeit und effektive Kommunikation"
+      },
+      interests: {
+        title: "Interessen",
+        interest1: "Erforschung neuer Webtechnologien und Frameworks",
+        interest2: "Open-Source-Beiträge und Community-Beteiligung",
+        interest3: "UI/UX-Design und Benutzererfahrungsoptimierung"
       },
       cta: {
-        title: 'Lass uns verbinden',
-        description: 'Ich bin immer offen für Diskussionen über neue Möglichkeiten und interessante Projekte.',
-        button: 'Kontakt aufnehmen'
+        title: "Lass uns vernetzen!",
+        description: "Ich bin immer interessiert daran, neue Möglichkeiten, Projekte zu diskutieren oder einfach über Technologie zu sprechen.",
+        button: "Meinen Lebenslauf herunterladen"
       }
-    },
-
-    // Skills Page
-    skills: {
-      title: 'Meine Fähigkeiten',
-      subtitle: 'Technologien und Tools, mit denen ich arbeite',
-      categories: {
-        technical: 'Technische Fähigkeiten',
-        soft: 'Soft Skills',
-        tools: 'Tools & Technologien'
-      },
-      softSkills: {
-        problemSolving: 'Problemlösung',
-        teamwork: 'Teamarbeit',
-        communication: 'Kommunikation',
-        creativity: 'Kreativität',
-        adaptability: 'Anpassungsfähigkeit',
-        leadership: 'Führung'
-      }
-    },
-
-    // Projects Page
-    projects: {
-      title: 'Meine Projekte',
-      subtitle: 'Eine Auswahl meiner neuesten Arbeiten',
-      search: 'Projekte suchen...',
-      filter: 'Nach Sprache filtern',
-      all: 'Alle',
-      loading: 'Projekte werden geladen...',
-      error: 'Fehler beim Laden der Projekte',
-      noResults: 'Keine Projekte gefunden',
-      viewCode: 'Code ansehen',
-      liveDemo: 'Live Demo',
-      technologies: 'Technologien',
-      createdAt: 'Erstellt',
-      updatedAt: 'Zuletzt aktualisiert'
-    },
-
-    // Contact Page
-    contact: {
-      title: 'Kontakt aufnehmen',
-      subtitle: 'Lass uns über dein nächstes Projekt sprechen',
-      form: {
-        name: 'Dein Name',
-        email: 'Deine E-Mail',
-        subject: 'Betreff',
-        message: 'Deine Nachricht',
-        send: 'Nachricht senden',
-        sending: 'Wird gesendet...',
-        success: 'Nachricht erfolgreich gesendet!',
-        error: 'Fehler beim Senden der Nachricht. Bitte versuche es erneut.'
-      },
-      info: {
-        title: 'Kontaktinformationen',
-        email: 'E-Mail',
-        location: 'Standort',
-        availability: 'Verfügbar für Freelance-Arbeit'
-      },
-      social: {
-        title: 'Folge mir',
-        github: 'GitHub',
-        linkedin: 'LinkedIn',
-        twitter: 'Twitter'
-      }
-    },
-
-    // Settings Page
-    settings: {
-      title: 'Einstellungen',
-      subtitle: 'Personalisiere deine Erfahrung',
-      appearance: {
-        title: 'Erscheinungsbild',
-        theme: 'Design',
-        light: 'Hell',
-        dark: 'Dunkel',
-        system: 'System'
-      },
-      language: {
-        title: 'Sprache',
-        select: 'Sprache auswählen',
-        current: 'Aktuelle Sprache'
-      },
-      accessibility: {
-        title: 'Barrierefreiheit',
-        reducedMotion: 'Bewegung reduzieren',
-        highContrast: 'Hoher Kontrast'
-      },
-      about: {
-        title: 'Über diese Seite',
-        version: 'Version',
-        built: 'Erstellt mit React, TypeScript und Tailwind CSS',
-        updated: 'Zuletzt aktualisiert'
-      }
-    },
-
-    // Common
-    common: {
-      loading: 'Lädt...',
-      error: 'Etwas ist schief gelaufen',
-      retry: 'Erneut versuchen',
-      close: 'Schließen',
-      save: 'Speichern',
-      cancel: 'Abbrechen',
-      back: 'Zurück',
-      next: 'Weiter',
-      previous: 'Vorherige',
-      menu: 'Menü'
     }
   },
-
   fr: {
     // Navigation
     navigation: {
