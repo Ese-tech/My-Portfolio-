@@ -11,6 +11,8 @@ import {
 import MobileView from "./MobileView";
 import ROUTES_PATHS from "../routing/Routes_Paths";
 import { useLanguage } from "../../contexts/LanguageContext";
+import { ThemeToggle } from "../../components/ThemeToggle";
+import { LanguageSelector } from "../../components/LanguageSelector";
 
 export function NavBar() {
   const { t } = useLanguage();
@@ -24,14 +26,15 @@ export function NavBar() {
 
       {/* Tablet View */}
       <div className="hidden md:flex lg:hidden fixed top-0 left-0 w-full h-16 bg-gradient-to-r from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black shadow-lg z-50 text-white">
-        <nav className="flex flex-row justify-between items-center w-full p-4">
-          <div className="flex space-x-6">
+        <nav className="flex flex-row justify-between items-center w-full px-4">
+          {/* Navigation Links */}
+          <div className="flex space-x-4">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
+                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
               }
             >
               <FontAwesomeIcon icon={faHome} className="mr-2 text-lg" />
@@ -42,8 +45,8 @@ export function NavBar() {
               to="/about-me"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
+                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
               }
             >
               <FontAwesomeIcon icon={faUser} className="mr-2 text-lg" />
@@ -54,8 +57,8 @@ export function NavBar() {
               to="/skills"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
+                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
               }
             >
               <FontAwesomeIcon icon={faCogs} className="mr-2 text-lg" />
@@ -66,8 +69,8 @@ export function NavBar() {
               to="/my-projects"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
+                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
               }
             >
               <FontAwesomeIcon
@@ -83,8 +86,8 @@ export function NavBar() {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
+                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
               }
             >
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-lg" />
@@ -97,8 +100,8 @@ export function NavBar() {
               to={ROUTES_PATHS.SETTINGS}
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
+                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
               }
             >
               <FontAwesomeIcon icon={faGear} className="mr-2 text-lg" />
@@ -107,9 +110,17 @@ export function NavBar() {
               </span>
             </NavLink>
           </div>
+
+          {/* Theme und Language Controls */}
+          <div className="flex items-center space-x-3">
+            <ThemeToggle />
+            <div className="w-px h-8 bg-gradient-to-b from-transparent via-slate-500 dark:via-slate-600 to-transparent"></div>
+            <LanguageSelector />
+          </div>
         </nav>
       </div>
     </>
   );
 }
+
 export default NavBar;

@@ -8,6 +8,8 @@ import {
     faCogs,
 } from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "../../contexts/LanguageContext";
+import { ThemeToggle } from "../../components/ThemeToggle";
+import { LanguageSelector } from "../../components/LanguageSelector";
 
 function SideBar() {
     const { t } = useLanguage();
@@ -17,6 +19,7 @@ function SideBar() {
             <div className='flex justify-center items-center p-8 border-b border-teal-400/30'>
                 <h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-gold-400 bg-clip-text text-transparent'>Menu</h2>
             </div>
+            
             <nav className='flex flex-col p-6 space-y-4 mt-8'>
                 <NavLink
                     to='/'
@@ -79,6 +82,21 @@ function SideBar() {
                     <span className='text-lg'>{t('navigation.contact')}</span>
                 </NavLink>
             </nav>
+
+            {/* Theme und Language Controls am Ende der Sidebar */}
+            <div className="absolute bottom-8 left-0 right-0 px-6">
+                <div className="bg-slate-700/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-600/50 dark:border-slate-700/50">
+                    <div className="flex flex-col space-y-4">
+                        <div className="flex items-center justify-center">
+                            <ThemeToggle />
+                        </div>
+                        <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-500 dark:via-slate-600 to-transparent"></div>
+                        <div className="flex items-center justify-center">
+                            <LanguageSelector />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

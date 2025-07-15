@@ -13,6 +13,8 @@ import { NavLink } from "react-router";
 import { useSidebarContext } from "./useSidebarContext";
 import { useLanguage } from "../../contexts/LanguageContext";
 import ROUTES_PATHS from "../routing/Routes_Paths";
+import { ThemeToggle } from "../../components/ThemeToggle";
+import { LanguageSelector } from "../../components/LanguageSelector";
 
 function MobileView() {
     const { isSidebarOpen, toggleSidebar } = useSidebarContext();
@@ -20,15 +22,21 @@ function MobileView() {
 
     return (
         <>
-            {/* Hamburger Menu Button */}
+            {/* Header mit Theme und Language Controls */}
             <div className='flex justify-between items-center p-4'>
-                <h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg'>Ese Osagie</h2>
-                <button
-                    className='text-2xl text-white hover:text-teal-300 transition-colors duration-300'
-                    onClick={toggleSidebar}
-                >
-                    <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
-                </button>
+                <h2 className='text-2xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg'>Ese Osagie</h2>
+                
+                {/* Controls und Hamburger */}
+                <div className="flex items-center space-x-3">
+                    <ThemeToggle />
+                    <LanguageSelector />
+                    <button
+                        className='text-2xl text-white hover:text-teal-300 transition-colors duration-300 ml-2'
+                        onClick={toggleSidebar}
+                    >
+                        <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Sidebar Overlay */}
