@@ -12,11 +12,11 @@ export type SoftSkill = {
     icon?: string;
 };
 export type SkillsData = {
-    skillsTitle: string;
+    SkillsTitle: string;
     skills: Skill[];
 };
 export type SkillsDataWeb = {
-    skillsTitle: string;
+    SkillsTitle: string;
     skills: {
         title: string;
         hash: string;
@@ -25,7 +25,7 @@ export type SkillsDataWeb = {
     }[];
 };
 export type SkillsDataSoft = {
-    skillsTitle: string;
+    SkillsTitle: string;
     skills: SoftSkill[];
 };
 export type SkillsDataType = SkillsData | SkillsDataWeb | SkillsDataSoft;

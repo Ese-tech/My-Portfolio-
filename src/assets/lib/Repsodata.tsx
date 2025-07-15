@@ -123,7 +123,7 @@ export const softSkills = [
 
 export const skillsDataWeb = [
   {
-    skillsTitle: "WebDevelopment",
+    SkillsTitle: "WebDevelopment",
     skills: [
       {
         title: "HTML",

@@ -28,7 +28,7 @@ export function NavBar() {
       <div className="hidden md:flex lg:hidden fixed top-0 left-0 w-full h-16 bg-gradient-to-r from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black shadow-lg z-50 text-white">
         <nav className="flex flex-row justify-between items-center w-full px-4">
           {/* Navigation Links */}
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 ">
             <NavLink
               to="/"
               className={({ isActive }) =>

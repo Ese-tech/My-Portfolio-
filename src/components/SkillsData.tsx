@@ -61,10 +61,10 @@ const SkillsData = () => {
             <div className="skills-container w-full max-w-6xl mx-auto bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 px-8 py-12">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent mb-4 drop-shadow-lg">
-                        {t('skillsTitle')}
+                        {t('SkillsTitle')}
                     </h2>
                     <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                        {t('skillsDescription')}
+                        {t('SkillsDescription')}
                     </p>
                 </div>
 

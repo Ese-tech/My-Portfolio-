@@ -18,6 +18,7 @@ export function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const currentLanguage = languageOptions.find(lang => lang.code === language);
@@ -74,9 +75,36 @@ export function LanguageSelector() {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [isOpen]);
 
+  // Determine dropdown position
+  const getDropdownPosition = () => {
+    if (!buttonRef.current) return {};
+    
+    const rect = buttonRef.current.getBoundingClientRect();
+    const isInSidebar = rect.left < 300; // Sidebar ist etwa 256px breit
+    
+    if (isInSidebar) {
+      // In der Sidebar: Dropdown nach rechts öffnen
+      return {
+        left: '100%',
+        marginLeft: '8px',
+        bottom: '0',
+        top: 'auto'
+      };
+    } else {
+      // Normal: Dropdown nach unten und rechts öffnen
+      return {
+        top: '100%',
+        marginTop: '8px',
+        right: '0',
+        left: 'auto'
+      };
+    }
+  };
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
+        ref={buttonRef}
         onClick={handleToggle}
         className="group flex items-center space-x-2 p-3 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl active:scale-95"
         aria-label="Select language"
@@ -112,12 +140,15 @@ export function LanguageSelector() {
         />
       </button>
 
-      {/* Dropdown with animation */}
-      <div className={`absolute top-full mt-2 right-0 w-80 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200/50 dark:border-slate-700/50 backdrop-blur-sm overflow-hidden z-50 transition-all duration-300 transform-gpu ${
-        isOpen 
-          ? 'opacity-100 translate-y-0 scale-100 visible' 
-          : 'opacity-0 translate-y-2 scale-95 invisible'
-      }`}>
+      {/* Dropdown with dynamic positioning */}
+      <div 
+        className={`absolute w-80 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200/50 dark:border-slate-700/50 backdrop-blur-sm overflow-hidden transition-all duration-300 transform-gpu ${
+          isOpen 
+            ? 'opacity-100 translate-y-0 scale-100 visible z-[100]' 
+            : 'opacity-0 translate-y-2 scale-95 invisible z-[-1]'
+        }`}
+        style={getDropdownPosition()}
+      >
         {/* Header */}
         <div className="p-4 border-b border-slate-200 dark:border-slate-700 bg-gradient-to-r from-teal-50 to-blue-50 dark:from-slate-800 dark:to-slate-700">
           <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-3 flex items-center">
