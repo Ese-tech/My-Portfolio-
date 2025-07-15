@@ -78,7 +78,7 @@ const ProjectsDetaList = () => {
         <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-slate-200/50 p-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 bg-clip-text text-transparent mb-4">
-              {t('myProjectsTitle')}
+              {t('MyProjectsTitle')}
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-teal-500 to-blue-500 mx-auto mb-6"></div>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -91,12 +91,12 @@ const ProjectsDetaList = () => {
             <input
               type="text"
               placeholder={t('searchProjects')}
-              className="border border-slate-300 rounded-xl bg-white/80 text-slate-800 px-6 py-3 w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 placeholder-slate-500 shadow-sm"
+              className="border border-slate-300 rounded-xl bg-gradient-to-r from-slate-400 to-amber-500 hover:from-slate-500 hover:to-amber-600 text-slate-700 px-6 py-3 w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 placeholder-slate-950 shadow-sm"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <select
-              className="border border-slate-300 rounded-xl bg-white/80 text-slate-800 px-6 py-3 w-full md:w-1/4 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 shadow-sm"
+              className="border border-slate-300 rounded-xl bg-gradient-to-r from-slate-400 to-amber-500 hover:from-slate-500 hover:to-amber-600 text-slate-700 px-6 py-3 w-full md:w-1/4 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 shadow-sm"
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
             >

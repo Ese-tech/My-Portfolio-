@@ -27,57 +27,57 @@ export function NavBar() {
       {/* Tablet View */}
       <div className="hidden md:flex lg:hidden fixed top-0 left-0 w-full h-16 bg-gradient-to-r from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black shadow-lg z-50 text-white">
         <nav className="flex flex-row justify-between items-center w-full px-4">
-          {/* Navigation Links */}
-          <div className="flex space-x-4 ">
+          {/* Navigation Links - Zentriert */}
+          <div className="flex-1 flex justify-center space-x-6">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex flex-col items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30 min-w-[60px]"
+                  : "flex flex-col items-center justify-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300 min-w-[60px]"
               }
             >
-              <FontAwesomeIcon icon={faHome} className="mr-2 text-lg" />
-              <span className="hidden xl:inline">{t("navigation.home")}</span>
+              <FontAwesomeIcon icon={faHome} className="text-xl mb-1" />
+              <span className="hidden xl:block text-xs">{t("navigation.home")}</span>
             </NavLink>
 
             <NavLink
               to="/about-me"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex flex-col items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30 min-w-[60px]"
+                  : "flex flex-col items-center justify-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300 min-w-[60px]"
               }
             >
-              <FontAwesomeIcon icon={faUser} className="mr-2 text-lg" />
-              <span className="hidden xl:inline">{t("navigation.about")}</span>
+              <FontAwesomeIcon icon={faUser} className="text-xl mb-1" />
+              <span className="hidden xl:block text-xs">{t("navigation.about")}</span>
             </NavLink>
 
             <NavLink
               to="/skills"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex flex-col items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30 min-w-[60px]"
+                  : "flex flex-col items-center justify-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300 min-w-[60px]"
               }
             >
-              <FontAwesomeIcon icon={faCogs} className="mr-2 text-lg" />
-              <span className="hidden xl:inline">{t("navigation.skills")}</span>
+              <FontAwesomeIcon icon={faCogs} className="text-xl mb-1" />
+              <span className="hidden xl:block text-xs">{t("navigation.skills")}</span>
             </NavLink>
 
             <NavLink
               to="/my-projects"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex flex-col items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30 min-w-[60px]"
+                  : "flex flex-col items-center justify-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300 min-w-[60px]"
               }
             >
               <FontAwesomeIcon
                 icon={faProjectDiagram}
-                className="mr-2 text-lg"
+                className="text-xl mb-1"
               />
-              <span className="hidden xl:inline">
+              <span className="hidden xl:block text-xs">
                 {t("navigation.projects")}
               </span>
             </NavLink>
@@ -86,12 +86,12 @@ export function NavBar() {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex flex-col items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30 min-w-[60px]"
+                  : "flex flex-col items-center justify-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300 min-w-[60px]"
               }
             >
-              <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-lg" />
-              <span className="hidden xl:inline">
+              <FontAwesomeIcon icon={faEnvelope} className="text-xl mb-1" />
+              <span className="hidden xl:block text-xs">
                 {t("navigation.contact")}
               </span>
             </NavLink>
@@ -100,18 +100,18 @@ export function NavBar() {
               to={ROUTES_PATHS.SETTINGS}
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center px-3 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30"
-                  : "flex items-center px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300"
+                  ? "flex flex-col items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500/20 to-blue-500/20 backdrop-blur-sm font-bold border border-teal-400/30 min-w-[60px]"
+                  : "flex flex-col items-center justify-center px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300 min-w-[60px]"
               }
             >
-              <FontAwesomeIcon icon={faGear} className="mr-2 text-lg" />
-              <span className="hidden xl:inline">
+              <FontAwesomeIcon icon={faGear} className="text-xl mb-1" />
+              <span className="hidden xl:block text-xs">
                 {t("navigation.settings")}
               </span>
             </NavLink>
           </div>
 
-          {/* Theme und Language Controls */}
+          {/* Theme und Language Controls - Rechts */}
           <div className="flex items-center space-x-3">
             <ThemeToggle />
             <div className="w-px h-8 bg-gradient-to-b from-transparent via-slate-500 dark:via-slate-600 to-transparent"></div>

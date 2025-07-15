@@ -37,7 +37,7 @@ function HomeContent() {
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
             <span className="text-slate-700 dark:text-slate-200 block sm:inline">{t('home.welcome')}</span>
-            <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent hover:from-teal-500 hover:to-blue-500 transition-all duration-300">Ese Osagie</span>
+            <span className="ml-2 bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent hover:from-teal-500 hover:to-blue-500 transition-all duration-300">Ese Osagie</span>
           </h1>
 
           {/* Tagline */}

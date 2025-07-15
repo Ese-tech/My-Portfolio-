@@ -17,7 +17,7 @@ function SideBar() {
     return (
         <div className='hidden lg:block fixed left-0 top-0 h-full w-64 bg-gradient-to-b from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black shadow-2xl z-50 text-white'>
             <div className='flex justify-center items-center p-8 border-b border-teal-400/30'>
-                <h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-gold-400 bg-clip-text text-transparent'>Menu</h2>
+                <h2 className='text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent'>Menu</h2>
             </div>
             
             {/* Navigation Links - mit overflow-y-auto für Scrolling falls nötig */}
