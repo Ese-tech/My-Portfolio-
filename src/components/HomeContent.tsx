@@ -41,12 +41,12 @@ function HomeContent() {
           </h1>
 
           {/* Tagline */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-slate-600 dark:text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-slate-400 dark:text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             {t('home.subtitle')}
           </h2>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-slate-500 dark:text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed px-4">
+          <p className="text-lg md:text-xl text-slate-400 dark:text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed px-4">
             {t('home.description')}
           </p>
 
@@ -69,7 +69,7 @@ function HomeContent() {
           {/* Primary CTA - View Projects */}
           <Link 
             to={ROUTES_PATHS.MY_PROJECTS}
-            className="w-full sm:w-auto group bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 dark:from-slate-600 dark:to-slate-700 dark:hover:from-slate-700 dark:hover:to-slate-800 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+            className="w-full sm:w-auto group bg-gradient-to-r from-slate-400 to-amber-500 hover:from-slate-500 hover:to-amber-600 dark:from-slate-600 dark:to-slate-700 dark:hover:from-slate-700 dark:hover:to-slate-800 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
           >
             <FontAwesomeIcon icon={faEye} className="mr-3 group-hover:animate-pulse" />
             {t('home.buttons.viewProjects')}
@@ -78,7 +78,7 @@ function HomeContent() {
           {/* Secondary CTA - About Me */}
           <Link 
             to={ROUTES_PATHS.ABOUT_ME}
-            className="w-full sm:w-auto group border-2 border-teal-500 text-teal-600 dark:text-teal-400 hover:bg-gradient-to-r hover:from-teal-500 hover:to-blue-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+            className="w-full sm:w-auto group border-2 border-teal-500 text-teal-600 dark:text-teal-400 hover:bg-gradient-to-r hover:from-amber-600 hover:to-teal-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
           >
             <FontAwesomeIcon icon={faUser} className="mr-3" />
             {t('home.buttons.aboutMe')}
@@ -106,7 +106,7 @@ function HomeContent() {
             <div className="text-slate-200 dark:text-slate-300 font-medium text-sm lg:text-base">{t('home.stats.technologies')}</div>
           </div>
           <div className="bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-600 dark:to-slate-700 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 border border-slate-500 hover:border-gold-400 dark:border-slate-500 dark:hover:border-gold-400">
-            <div className="text-2xl lg:text-3xl font-bold text-gold-400 mb-2">1+</div>
+            <div className="text-2xl lg:text-3xl font-bold text-amber-600 mb-2">1+</div>
             <div className="text-slate-200 dark:text-slate-300 font-medium text-sm lg:text-base">{t('home.stats.experience')}</div>
           </div>
           <div className="bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-600 dark:to-slate-700 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 border border-slate-500 hover:border-emerald-400 dark:border-slate-500 dark:hover:border-emerald-400">

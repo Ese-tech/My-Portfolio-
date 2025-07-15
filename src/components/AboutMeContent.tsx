@@ -38,12 +38,11 @@ function AboutMeContent() {
               {t('about.title')}
             </span>
           </h1>
-          
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
+
+          <p className="text-xl font-bold text-slate-400 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
             {t('about.subtitle')}
           </p>
         </div>
-
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           
@@ -109,7 +108,7 @@ function AboutMeContent() {
         {/* Skills Overview */}
         <div className="bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-600 dark:to-slate-700 rounded-2xl p-8 shadow-lg mb-16 border border-slate-500">
           <div className="flex items-center mb-8">
-            <FontAwesomeIcon icon={faLightbulb} className="text-2xl text-gold-400 mr-4" />
+            <FontAwesomeIcon icon={faLightbulb} className="text-2xl text-amber-600 mr-4" />
             <h2 className="text-2xl font-bold text-white">
               {t('about.skills.title')}
             </h2>
@@ -152,14 +151,14 @@ function AboutMeContent() {
             
             {/* Tools */}
             <div className="text-center">
-              <h3 className="text-lg font-semibold text-amber-700 mb-3">
+              <h3 className="text-lg font-semibold text-amber-600 mb-3">
                 {t('about.skills.tools.title')}
               </h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {['Git', 'VS Code', 'Vite', 'Bun', 'Figma', 'Linux'].map((skill) => (
                   <span 
                     key={skill}
-                    className="px-3 py-1 bg-slate-600 dark:bg-slate-500 text-slate-200 rounded-full text-sm font-medium hover:bg-yellow-800 dark:hover:bg-gold-600 transition-colors cursor-pointer"
+                    className="px-3 py-1 bg-slate-600 dark:bg-slate-500 text-slate-200 rounded-full text-sm font-medium hover:bg-yellow-700 dark:hover:bg-gold-600 transition-colors cursor-pointer"
                   >
                     {skill}
                   </span>
