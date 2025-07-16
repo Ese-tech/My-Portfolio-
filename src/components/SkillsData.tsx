@@ -6,7 +6,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => (
     <div
         className="rounded-full p-[3px] w-40 h-40 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl animate-fade-in"
         style={{
-            background: "linear-gradient(to bottom right, #e2e8f0, #cbd5e1, #94a3b8)"
+            background: "linear-gradient(to bottom right, #e2e8f0, #cbd5e1, #6c7787)"
         }}
     >
         <div className="flex flex-col items-center bg-white dark:bg-slate-800 rounded-full shadow-lg p-6 w-36 h-36 justify-center hover:shadow-xl transition-shadow duration-300 border border-slate-200 dark:border-slate-700">
