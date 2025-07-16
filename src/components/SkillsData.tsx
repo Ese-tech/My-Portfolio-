@@ -2,7 +2,6 @@ import { skillsRow1, skillsRow2, softSkills } from "../assets/lib/Repsodata";
 import { Skill, SoftSkill  } from "../types/SkillTypes";
 import { useLanguage } from "../contexts/LanguageContext";
 
-
 const SkillCard = ({ skill }: { skill: Skill }) => (
     <div
         className="rounded-full p-[3px] w-40 h-40 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl animate-fade-in"
@@ -18,7 +17,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => (
                 style={{ color: skill.color }}
             />
             <p className="text-slate-800 dark:text-slate-200 text-sm font-semibold text-center leading-tight">{skill.name}</p>
-            <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">{skill.level}</p>
+            <p className="text-xs text-slate-400 dark:text-slate-700 mt-1">{skill.level}</p>
             {skill.projectLink && (
                 <a
                     href={skill.projectLink}

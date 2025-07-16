@@ -69,7 +69,7 @@ function HomeContent() {
           {/* Primary CTA - View Projects */}
           <Link 
             to={ROUTES_PATHS.MY_PROJECTS}
-            className="w-full sm:w-auto group bg-gradient-to-r from-slate-400 to-amber-500 hover:from-slate-500 hover:to-amber-600 dark:from-slate-600 dark:to-slate-700 dark:hover:from-slate-700 dark:hover:to-slate-800 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+            className="w-full sm:w-auto group bg-gradient-to-r from-blue-500 to-amber-500 hover:from-blue-600 hover:to-amber-600 dark:from-slate-600 dark:to-slate-700 dark:hover:from-slate-700 dark:hover:to-slate-800 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
           >
             <FontAwesomeIcon icon={faEye} className="mr-3 group-hover:animate-pulse" />
             {t('home.buttons.viewProjects')}

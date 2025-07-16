@@ -91,12 +91,12 @@ const ProjectsDetaList = () => {
             <input
               type="text"
               placeholder={t('searchProjects')}
-              className="border border-slate-300 rounded-xl bg-gradient-to-r from-slate-400 to-amber-500 hover:from-slate-500 hover:to-amber-600 text-slate-700 px-6 py-3 w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 placeholder-slate-950 shadow-sm"
+              className="border border-slate-300 rounded-xl  bg-slate-300 text-slate-700 px-6 py-3 w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 placeholder-slate-950 shadow-sm"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <select
-              className="border border-slate-300 rounded-xl bg-gradient-to-r from-slate-400 to-amber-500 hover:from-slate-500 hover:to-amber-600 text-slate-700 px-6 py-3 w-full md:w-1/4 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 shadow-sm"
+              className="border border-slate-300 rounded-xl bg-slate-300 text-slate-700 px-6 py-3 w-full md:w-1/4 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300 shadow-sm"
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
             >
