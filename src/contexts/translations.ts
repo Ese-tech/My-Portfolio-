@@ -81,6 +81,61 @@ export const translations = {
         description: "I'm always interested in discussing new opportunities, projects, or just chatting about technology.",
         button: "Download My CV"
       }
+    },
+
+    // Contact Page
+    contact: {
+      title: 'Get In Touch',
+      subtitle: 'Have a project in mind or just want to chat? I\'d love to hear from you. Let\'s build something amazing together!',
+      form: {
+        title: 'Send Me a Message',
+        name: 'Full Name',
+        email: 'Email Address',
+        subject: 'Subject',
+        message: 'Message',
+        send: 'Send Message',
+        sending: 'Sending...',
+        success: 'Thank you! Your message has been sent successfully. I\'ll get back to you soon.',
+        error: 'Sorry, something went wrong. Please try again or contact me directly via email.',
+        placeholders: {
+          name: 'Enter your full name',
+          email: 'Enter your email address',
+          subject: 'What\'s this about?',
+          message: 'Tell me about your project or just say hello...'
+        },
+        errors: {
+          nameRequired: 'Name is required',
+          nameMinLength: 'Name must be at least 2 characters',
+          emailRequired: 'Email is required',
+          emailInvalid: 'Please enter a valid email address',
+          subjectRequired: 'Subject is required',
+          subjectMinLength: 'Subject must be at least 5 characters',
+          messageRequired: 'Message is required',
+          messageMinLength: 'Message must be at least 10 characters'
+        }
+      },
+      info: {
+        title: 'Contact Information',
+        email: 'Email',
+        phone: 'Phone',
+        location: 'Location',
+        website: 'Website'
+      },
+      social: {
+        title: 'Connect With Me',
+        github: 'GitHub',
+        linkedin: 'LinkedIn',
+        twitter: 'Twitter'
+      },
+      availability: {
+        title: 'Availability',
+        status: 'Available for new projects',
+        responseTime: 'Usually responds within 24 hours'
+      },
+      location: {
+        title: 'My Location',
+        description: 'Based in Berlin, open to remote work worldwide'
+      }
     }
   },
   de: {
@@ -163,6 +218,61 @@ export const translations = {
         description: "Ich bin immer interessiert daran, neue Möglichkeiten, Projekte zu diskutieren oder einfach über Technologie zu sprechen.",
         button: "Meinen Lebenslauf herunterladen"
       }
+    },
+
+    // Contact Page
+    contact: {
+      title: 'Kontakt aufnehmen',
+      subtitle: 'Haben Sie ein Projekt im Kopf oder möchten Sie einfach nur chatten? Ich würde gerne von Ihnen hören. Lassen Sie uns gemeinsam etwas Großartiges schaffen!',
+      form: {
+        title: 'Schreiben Sie mir eine Nachricht',
+        name: 'Vollständiger Name',
+        email: 'E-Mail-Adresse',
+        subject: 'Betreff',
+        message: 'Nachricht',
+        send: 'Nachricht senden',
+        sending: 'Wird gesendet...',
+        success: 'Danke! Ihre Nachricht wurde erfolgreich gesendet. Ich werde mich bald bei Ihnen melden.',
+        error: 'Entschuldigung, es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt per E-Mail.',
+        placeholders: {
+          name: 'Geben Sie Ihren vollständigen Namen ein',
+          email: 'Geben Sie Ihre E-Mail-Adresse ein',
+          subject: 'Worum geht es?',
+          message: 'Erzählen Sie mir von Ihrem Projekt oder sagen Sie einfach Hallo...'
+        },
+        errors: {
+          nameRequired: 'Name ist erforderlich',
+          nameMinLength: 'Der Name muss aus mindestens 2 Zeichen bestehen',
+          emailRequired: 'E-Mail ist erforderlich',
+          emailInvalid: 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
+          subjectRequired: 'Betreff ist erforderlich',
+          subjectMinLength: 'Der Betreff muss aus mindestens 5 Zeichen bestehen',
+          messageRequired: 'Nachricht ist erforderlich',
+          messageMinLength: 'Die Nachricht muss aus mindestens 10 Zeichen bestehen'
+        }
+      },
+      info: {
+        title: 'Kontaktinformationen',
+        email: 'E-Mail',
+        phone: 'Telefon',
+        location: 'Standort',
+        website: 'Webseite'
+      },
+      social: {
+        title: 'Verbinden Sie sich mit mir',
+        github: 'GitHub',
+        linkedin: 'LinkedIn',
+        twitter: 'Twitter'
+      },
+      availability: {
+        title: 'Verfügbarkeit',
+        status: 'Verfügbar für neue Projekte',
+        responseTime: 'Antwortet normalerweise innerhalb von 24 Stunden'
+      },
+      location: {
+        title: 'Mein Standort',
+        description: 'Ansässig in Berlin, offen für Remote-Arbeit weltweit'
+      }
     }
   },
   fr: {
@@ -228,111 +338,59 @@ export const translations = {
       }
     },
 
-    // Skills Page
-    skills: {
-      title: 'Mes compétences',
-      subtitle: 'Technologies et outils avec lesquels je travaille',
-      categories: {
-        technical: 'Compétences techniques',
-        soft: 'Compétences interpersonnelles',
-        tools: 'Outils et technologies'
-      },
-      softSkills: {
-        problemSolving: 'Résolution de problèmes',
-        teamwork: 'Travail d\'équipe',
-        communication: 'Communication',
-        creativity: 'Créativité',
-        adaptability: 'Adaptabilité',
-        leadership: 'Leadership'
-      }
-    },
-
-    // Projects Page
-    projects: {
-      title: 'Mes projets',
-      subtitle: 'Une vitrine de mon travail récent',
-      search: 'Rechercher des projets...',
-      filter: 'Filtrer par langage',
-      all: 'Tous',
-      loading: 'Chargement des projets...',
-      error: 'Erreur lors du chargement des projets',
-      noResults: 'Aucun projet trouvé',
-      viewCode: 'Voir le code',
-      liveDemo: 'Démo en direct',
-      technologies: 'Technologies',
-      createdAt: 'Créé',
-      updatedAt: 'Dernière mise à jour'
-    },
-
     // Contact Page
     contact: {
-      title: 'Prendre contact',
-      subtitle: 'Discutons de votre prochain projet',
+      title: 'Entrer en contact',
+      subtitle: 'Vous avez un projet en tête ou vous voulez simplement discuter ? J\'aimerais avoir de vos nouvelles. Construisons quelque chose d\'incroyable ensemble !',
       form: {
-        name: 'Votre nom',
-        email: 'Votre email',
+        title: 'Envoyez-moi un message',
+        name: 'Nom complet',
+        email: 'Adresse e-mail',
         subject: 'Sujet',
-        message: 'Votre message',
+        message: 'Message',
         send: 'Envoyer le message',
         sending: 'Envoi en cours...',
-        success: 'Message envoyé avec succès !',
-        error: 'Erreur lors de l\'envoi du message. Veuillez réessayer.'
+        success: 'Merci ! Votre message a été envoyé avec succès. Je reviendrai vers vous bientôt.',
+        error: 'Désolé, quelque chose a mal tourné. Veuillez réessayer ou me contacter directement par e-mail.',
+        placeholders: {
+          name: 'Entrez votre nom complet',
+          email: 'Entrez votre adresse e-mail',
+          subject: 'De quoi s\'agit-il ?',
+          message: 'Parlez-moi de votre projet ou dites simplement bonjour...'
+        },
+        errors: {
+          nameRequired: 'Le nom est requis',
+          nameMinLength: 'Le nom doit comporter au moins 2 caractères',
+          emailRequired: 'L\'email est requis',
+          emailInvalid: 'Veuillez entrer une adresse e-mail valide',
+          subjectRequired: 'Le sujet est requis',
+          subjectMinLength: 'Le sujet doit comporter au moins 5 caractères',
+          messageRequired: 'Le message est requis',
+          messageMinLength: 'Le message doit comporter au moins 10 caractères'
+        }
       },
       info: {
         title: 'Informations de contact',
         email: 'Email',
-        location: 'Localisation',
-        availability: 'Disponible pour du travail freelance'
+        phone: 'Téléphone',
+        location: 'Emplacement',
+        website: 'Site web'
       },
       social: {
-        title: 'Suivez-moi',
+        title: 'Connectez-vous avec moi',
         github: 'GitHub',
         linkedin: 'LinkedIn',
         twitter: 'Twitter'
+      },
+      availability: {
+        title: 'Disponibilité',
+        status: 'Disponible pour de nouveaux projets',
+        responseTime: 'Répond généralement dans les 24 heures'
+      },
+      location: {
+        title: 'Mon emplacement',
+        description: 'Basé à Berlin, ouvert au travail à distance dans le monde entier'
       }
-    },
-
-    // Settings Page
-    settings: {
-      title: 'Paramètres',
-      subtitle: 'Personnalisez votre expérience',
-      appearance: {
-        title: 'Apparence',
-        theme: 'Thème',
-        light: 'Clair',
-        dark: 'Sombre',
-        system: 'Système'
-      },
-      language: {
-        title: 'Langue',
-        select: 'Sélectionner la langue',
-        current: 'Langue actuelle'
-      },
-      accessibility: {
-        title: 'Accessibilité',
-        reducedMotion: 'Réduire le mouvement',
-        highContrast: 'Contraste élevé'
-      },
-      about: {
-        title: 'À propos de ce site',
-        version: 'Version',
-        built: 'Construit avec React, TypeScript et Tailwind CSS',
-        updated: 'Dernière mise à jour'
-      }
-    },
-
-    // Common
-    common: {
-      loading: 'Chargement...',
-      error: 'Quelque chose s\'est mal passé',
-      retry: 'Réessayer',
-      close: 'Fermer',
-      save: 'Sauvegarder',
-      cancel: 'Annuler',
-      back: 'Retour',
-      next: 'Suivant',
-      previous: 'Précédent',
-      menu: 'Menu'
     }
   },
 
@@ -399,47 +457,12 @@ export const translations = {
       }
     },
 
-    // Skills Page
-    skills: {
-      title: 'Mis habilidades',
-      subtitle: 'Tecnologías y herramientas con las que trabajo',
-      categories: {
-        technical: 'Habilidades técnicas',
-        soft: 'Habilidades blandas',
-        tools: 'Herramientas y tecnologías'
-      },
-      softSkills: {
-        problemSolving: 'Resolución de problemas',
-        teamwork: 'Trabajo en equipo',
-        communication: 'Comunicación',
-        creativity: 'Creatividad',
-        adaptability: 'Adaptabilidad',
-        leadership: 'Liderazgo'
-      }
-    },
-
-    // Projects Page
-    projects: {
-      title: 'Mis proyectos',
-      subtitle: 'Una muestra de mi trabajo reciente',
-      search: 'Buscar proyectos...',
-      filter: 'Filtrar por idioma',
-      all: 'Todos',
-      loading: 'Cargando proyectos...',
-      error: 'Error cargando proyectos',
-      noResults: 'No se encontraron proyectos',
-      viewCode: 'Ver código',
-      liveDemo: 'Demo en vivo',
-      technologies: 'Tecnologías',
-      createdAt: 'Creado',
-      updatedAt: 'Última actualización'
-    },
-
     // Contact Page
     contact: {
       title: 'Ponerse en contacto',
       subtitle: 'Hablemos de tu próximo proyecto',
       form: {
+        title: 'Envíame un mensaje',
         name: 'Tu nombre',
         email: 'Tu email',
         subject: 'Asunto',
@@ -447,63 +470,46 @@ export const translations = {
         send: 'Enviar mensaje',
         sending: 'Enviando...',
         success: '¡Mensaje enviado exitosamente!',
-        error: 'Error enviando mensaje. Por favor intenta de nuevo.'
+        error: 'Error enviando mensaje. Por favor intenta de nuevo.',
+        placeholders: {
+          name: 'Ingresa tu nombre completo',
+          email: 'Ingresa tu dirección de correo electrónico',
+          subject: '¿De qué se trata esto?',
+          message: 'Cuéntame sobre tu proyecto o simplemente di hola...'
+        },
+        errors: {
+          nameRequired: 'El nombre es obligatorio',
+          nameMinLength: 'El nombre debe tener al menos 2 caracteres',
+          emailRequired: 'El correo electrónico es obligatorio',
+          emailInvalid: 'Por favor ingresa una dirección de correo electrónico válida',
+          subjectRequired: 'El asunto es obligatorio',
+          subjectMinLength: 'El asunto debe tener al menos 5 caracteres',
+          messageRequired: 'El mensaje es obligatorio',
+          messageMinLength: 'El mensaje debe tener al menos 10 caracteres'
+        }
       },
       info: {
         title: 'Información de contacto',
         email: 'Email',
+        phone: 'Teléfono',
         location: 'Ubicación',
-        availability: 'Disponible para trabajo freelance'
+        website: 'Sitio web'
       },
       social: {
         title: 'Sígueme',
         github: 'GitHub',
         linkedin: 'LinkedIn',
         twitter: 'Twitter'
+      },
+      availability: {
+        title: 'Disponibilidad',
+        status: 'Disponible para nuevos proyectos',
+        responseTime: 'Normalmente responde dentro de 24 horas'
+      },
+      location: {
+        title: 'Mi ubicación',
+        description: 'Con base en Berlín, abierto al trabajo remoto en todo el mundo'
       }
-    },
-
-    // Settings Page
-    settings: {
-      title: 'Configuración',
-      subtitle: 'Personaliza tu experiencia',
-      appearance: {
-        title: 'Apariencia',
-        theme: 'Tema',
-        light: 'Claro',
-        dark: 'Oscuro',
-        system: 'Sistema'
-      },
-      language: {
-        title: 'Idioma',
-        select: 'Seleccionar idioma',
-        current: 'Idioma actual'
-      },
-      accessibility: {
-        title: 'Accesibilidad',
-        reducedMotion: 'Reducir movimiento',
-        highContrast: 'Alto contraste'
-      },
-      about: {
-        title: 'Acerca de este sitio',
-        version: 'Versión',
-        built: 'Construido con React, TypeScript y Tailwind CSS',
-        updated: 'Última actualización'
-      }
-    },
-
-    // Common
-    common: {
-      loading: 'Cargando...',
-      error: 'Algo salió mal',
-      retry: 'Intentar de nuevo',
-      close: 'Cerrar',
-      save: 'Guardar',
-      cancel: 'Cancelar',
-      back: 'Atrás',
-      next: 'Siguiente',
-      previous: 'Anterior',
-      menu: 'Menú'
     }
   },
 
@@ -570,111 +576,59 @@ export const translations = {
       }
     },
 
-    // Skills Page
-    skills: {
-      title: '我的技能',
-      subtitle: '我使用的技术和工具',
-      categories: {
-        technical: '技术技能',
-        soft: '软技能',
-        tools: '工具和技术'
-      },
-      softSkills: {
-        problemSolving: '问题解决',
-        teamwork: '团队合作',
-        communication: '沟通',
-        creativity: '创造力',
-        adaptability: '适应性',
-        leadership: '领导力'
-      }
-    },
-
-    // Projects Page
-    projects: {
-      title: '我的项目',
-      subtitle: '我最近工作的展示',
-      search: '搜索项目...',
-      filter: '按语言筛选',
-      all: '全部',
-      loading: '加载项目中...',
-      error: '加载项目时出错',
-      noResults: '未找到项目',
-      viewCode: '查看代码',
-      liveDemo: '在线演示',
-      technologies: '技术',
-      createdAt: '创建于',
-      updatedAt: '最后更新'
-    },
-
     // Contact Page
     contact: {
       title: '联系我',
       subtitle: '让我们讨论您的下一个项目',
       form: {
+        title: '给我发消息',
         name: '您的姓名',
         email: '您的邮箱',
         subject: '主题',
         message: '您的消息',
         send: '发送消息',
         sending: '发送中...',
-        success: '消息发送成功！',
-        error: '发送消息时出错。请重试。'
+        success: '消息发送成功！我会尽快回复您。',
+        error: '发送消息时出错。请重试或直接通过电子邮件联系我。',
+        placeholders: {
+          name: '输入您的全名',
+          email: '输入您的电子邮件地址',
+          subject: '这是什么主题？',
+          message: '告诉我关于您的项目或只是打个招呼...'
+        },
+        errors: {
+          nameRequired: '姓名是必填的',
+          nameMinLength: '姓名至少需要2个字符',
+          emailRequired: '电子邮件是必填的',
+          emailInvalid: '请输入有效的电子邮件地址',
+          subjectRequired: '主题是必填的',
+          subjectMinLength: '主题至少需要5个字符',
+          messageRequired: '消息是必填的',
+          messageMinLength: '消息至少需要10个字符'
+        }
       },
       info: {
         title: '联系信息',
         email: '邮箱',
+        phone: '电话',
         location: '位置',
-        availability: '可接受自由职业工作'
+        website: '网站'
       },
       social: {
         title: '关注我',
         github: 'GitHub',
         linkedin: 'LinkedIn',
         twitter: 'Twitter'
+      },
+      availability: {
+        title: '可用性',
+        status: '接受新项目',
+        responseTime: '通常在24小时内回复'
+      },
+      location: {
+        title: '我的位置',
+        description: '常驻柏林，接受全球远程工作'
       }
-    },
-
-    // Settings Page
-    settings: {
-      title: '设置',
-      subtitle: '自定义您的体验',
-      appearance: {
-        title: '外观',
-        theme: '主题',
-        light: '浅色',
-        dark: '深色',
-        system: '系统'
-      },
-      language: {
-        title: '语言',
-        select: '选择语言',
-        current: '当前语言'
-      },
-      accessibility: {
-        title: '无障碍',
-        reducedMotion: '减少动画',
-        highContrast: '高对比度'
-      },
-      about: {
-        title: '关于此网站',
-        version: '版本',
-        built: '使用React、TypeScript和Tailwind CSS构建',
-        updated: '最后更新'
-      }
-    },
-
-    // Common
-    common: {
-      loading: '加载中...',
-      error: '出现错误',
-      retry: '重试',
-      close: '关闭',
-      save: '保存',
-      cancel: '取消',
-      back: '返回',
-      next: '下一个',
-      previous: '上一个',
-      menu: '菜单'
     }
   },
 
@@ -741,111 +695,59 @@ export const translations = {
       }
     },
 
-    // Skills Page
-    skills: {
-      title: '私のスキル',
-      subtitle: '私が使用するテクノロジーとツール',
-      categories: {
-        technical: '技術スキル',
-        soft: 'ソフトスキル',
-        tools: 'ツールとテクノロジー'
-      },
-      softSkills: {
-        problemSolving: '問題解決',
-        teamwork: 'チームワーク',
-        communication: 'コミュニケーション',
-        creativity: '創造性',
-        adaptability: '適応性',
-        leadership: 'リーダーシップ'
-      }
-    },
-
-    // Projects Page
-    projects: {
-      title: '私のプロジェクト',
-      subtitle: '最近の作品のショーケース',
-      search: 'プロジェクトを検索...',
-      filter: '言語でフィルター',
-      all: 'すべて',
-      loading: 'プロジェクトを読み込み中...',
-      error: 'プロジェクトの読み込みエラー',
-      noResults: 'プロジェクトが見つかりません',
-      viewCode: 'コードを見る',
-      liveDemo: 'ライブデモ',
-      technologies: 'テクノロジー',
-      createdAt: '作成日',
-      updatedAt: '最終更新'
-    },
-
     // Contact Page
     contact: {
       title: 'お問い合わせ',
       subtitle: 'あなたの次のプロジェクトについて話しましょう',
       form: {
+        title: 'メッセージを送信',
         name: 'お名前',
         email: 'メールアドレス',
         subject: '件名',
         message: 'メッセージ',
         send: 'メッセージを送信',
         sending: '送信中...',
-        success: 'メッセージが正常に送信されました！',
-        error: 'メッセージの送信エラー。もう一度お試しください。'
+        success: 'メッセージが正常に送信されました！すぐに返信いたします。',
+        error: 'メッセージの送信エラー。もう一度お試しください。',
+        placeholders: {
+          name: 'お名前を入力してください',
+          email: 'メールアドレスを入力してください',
+          subject: 'これは何についてですか？',
+          message: 'プロジェクトについて教えてください、またはただ挨拶してください...'
+        },
+        errors: {
+          nameRequired: '名前は必須です',
+          nameMinLength: '名前は2文字以上である必要があります',
+          emailRequired: 'メールは必須です',
+          emailInvalid: '有効なメールアドレスを入力してください',
+          subjectRequired: '件名は必須です',
+          subjectMinLength: '件名は5文字以上である必要があります',
+          messageRequired: 'メッセージは必須です',
+          messageMinLength: 'メッセージは10文字以上である必要があります'
+        }
       },
       info: {
         title: '連絡先情報',
         email: 'メール',
+        phone: '電話',
         location: '場所',
-        availability: 'フリーランス作業受付中'
+        website: 'ウェブサイト'
       },
       social: {
         title: 'フォローしてください',
         github: 'GitHub',
         linkedin: 'LinkedIn',
         twitter: 'Twitter'
+      },
+      availability: {
+        title: '可用性',
+        status: '新しいプロジェクトの受け入れ中',
+        responseTime: '通常24時間以内に返信'
+      },
+      location: {
+        title: '私の位置',
+        description: 'ベルリンに拠点を置き、世界中のリモートワークに対応'
       }
-    },
-
-    // Settings Page
-    settings: {
-      title: '設定',
-      subtitle: '体験をカスタマイズ',
-      appearance: {
-        title: '外観',
-        theme: 'テーマ',
-        light: 'ライト',
-        dark: 'ダーク',
-        system: 'システム'
-      },
-      language: {
-        title: '言語',
-        select: '言語を選択',
-        current: '現在の言語'
-      },
-      accessibility: {
-        title: 'アクセシビリティ',
-        reducedMotion: 'モーションを減らす',
-        highContrast: 'ハイコントラスト'
-      },
-      about: {
-        title: 'このサイトについて',
-        version: 'バージョン',
-        built: 'React、TypeScript、Tailwind CSSで構築',
-        updated: '最終更新'
-      }
-    },
-
-    // Common
-    common: {
-      loading: '読み込み中...',
-      error: '何かが間違っています',
-      retry: '再試行',
-      close: '閉じる',
-      save: '保存',
-      cancel: 'キャンセル',
-      back: '戻る',
-      next: '次へ',
-      previous: '前へ',
-      menu: 'メニュー'
     }
   }
 };
