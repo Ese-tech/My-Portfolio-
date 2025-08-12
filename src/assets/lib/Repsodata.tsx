@@ -1,3 +1,5 @@
+// Removed invalid import statement; add valid imports below if needed
+
 export const skillsRow1 = [
   {
     name: "HTML",
@@ -199,7 +201,7 @@ export const reposdata = [
     id: 2,
     name: "Todo-App",
     description: "A simple todo app",
-    image: "",
+    image: "../image/todo.png",
     technologiesTags: ["Typescript", "Tailwind CSS", "Bun"],
     links: {
       githubUrl: "https://github.com/Ese-tech/Todo-app",
@@ -216,7 +218,7 @@ export const reposdata = [
     id: 3,
     name: "fullstack",
     description: "A full-stack login application",
-    image: "",
+    image: "../image/login.png",
     technologiesTags: ["React", "Tailwind CSS", "TypeScript"],
     links: {
       githubUrl: "https://github.com/Ese-tech/fullstack",
