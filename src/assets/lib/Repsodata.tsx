@@ -227,6 +227,6 @@ export const reposdata = [
     topics: ["login", "app"],
     created_at: "2024-01-01T00:00:00Z",
     updated_at: "2024-01-02T00:00:00Z",
-    language: "TypeScript",
+    language: "TypeScript, React",
   },
 ];
