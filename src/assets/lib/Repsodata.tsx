@@ -212,4 +212,21 @@ export const reposdata = [
     updated_at: "2024-01-02T00:00:00Z",
     language: "TypeScript",
   },
+  {
+    id: 3,
+    name: "full-stack-login",
+    description: "A full-stack login application",
+    image: "",
+    technologiesTags: ["React", "Tailwind CSS", "TypeScript"],
+    links: {
+      githubUrl: "https://github.com/Ese-tech/fullstack",
+      vercelUrl: "https://fullstack-frontend-login.onrender.com/",
+    },
+    html_url: "https://github.com/Ese-tech/fullstack",
+    stargazers_count: 0,
+    topics: ["login", "app"],
+    created_at: "2024-01-01T00:00:00Z",
+    updated_at: "2024-01-02T00:00:00Z",
+    language: "TypeScript",
+  },
 ];
