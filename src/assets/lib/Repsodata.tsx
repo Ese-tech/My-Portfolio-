@@ -214,7 +214,7 @@ export const reposdata = [
   },
   {
     id: 3,
-    name: "full-stack-login",
+    name: "fullstack",
     description: "A full-stack login application",
     image: "",
     technologiesTags: ["React", "Tailwind CSS", "TypeScript"],

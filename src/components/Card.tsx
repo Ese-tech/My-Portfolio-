@@ -144,9 +144,12 @@ function Card() {
           {/* GitHub Stats Banner */}
           <div className="bg-gradient-to-r from-slate-700 to-slate-800 p-6 text-center">
             <img
-              src={`https://img.shields.io/github/stars/Ese-tech/${name}?style=for-the-badge&color=14b8a6`}
-              alt={`${name} GitHub stars`}
+              src={`https://github-readme-stats.vercel.app/api/pin/?username=Ese-tech&repo=${name}&theme=transparent&hide_border=true&title_color=ffffff&text_color=ffffff&icon_color=14b8a6`}
+              alt={`${name} GitHub stats`}
               className="mx-auto rounded-lg shadow-lg"
+              onError={(e) => {
+                e.currentTarget.src = ""; // Use your own fallback image
+              }}
             />
           </div>
 
