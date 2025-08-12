@@ -157,6 +157,14 @@ function Card() {
           <div className="p-8">
             {/* Header */}
             <div className="text-center mb-8">
+              {/* Project Image */}
+              {repoData.image && (
+                <img
+                  src={repoData.image}
+                  alt={repoData.name}
+                  className="mx-auto mb-6 rounded-xl shadow-lg w-80 h-40 object-cover"
+                />
+              )}
               <h1 className="text-4xl font-extrabold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 bg-clip-text text-transparent mb-4">
                 {name || "No name available"}
               </h1>
